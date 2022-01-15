@@ -8,17 +8,22 @@ public class SquareSpawner : MonoBehaviour
 
 	public float startSpeed;
 	public float speedIncrease;
+    public float speedIncreaseFrequency;
 	public float timeBetweenSpawns;
+    private int numIncreases;
 	private float spawnTimer;
+    private float speedTimer;
 
     void Start(){
         spawnTimer = 0;
+        speedTimer = 0;
+        numIncreases = 0;
     }
 
     Color getRandomColor(){
         int randColor = Random.Range(0, 3);
         Color returnColor = Color.white;
-        Debug.Log(randColor);
+        // Debug.Log(randColor);
         switch (randColor){
             case 0:
                 returnColor = Color.red;
@@ -38,13 +43,21 @@ public class SquareSpawner : MonoBehaviour
 
 	void Update(){
 		if (spawnTimer > timeBetweenSpawns){
-            Instantiate(sq, gameObject.transform.position, Quaternion.identity);
-            sq.GetComponent<SquareMover>().squareSpeed = startSpeed;
-            sq.GetComponent<SpriteRenderer>().color = getRandomColor();
+            Square newSquare = Instantiate(sq, gameObject.transform.position, Quaternion.identity);
+            newSquare.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
+            newSquare.GetComponent<SpriteRenderer>().color = getRandomColor();
             spawnTimer = 0;
 		}
         else{
             spawnTimer += Time.deltaTime;
+        }
+
+        if (speedTimer > speedIncreaseFrequency){
+            numIncreases++;
+            speedTimer = 0;
+        }
+        else{
+            speedTimer += Time.deltaTime;
         }
 	}
 }
