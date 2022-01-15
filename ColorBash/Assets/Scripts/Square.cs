@@ -11,6 +11,7 @@ public class Square : MonoBehaviour
 	protected virtual void OnCollisionEnter2D(Collision2D collision){
 		if (collision.gameObject.tag == "Player"){
             Debug.Log("Collided with Player");
+			ScoreScript.scoreValue += 1; 
 			takeDamage();
 		}
 	}
