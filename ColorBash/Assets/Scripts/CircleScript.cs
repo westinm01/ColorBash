@@ -7,7 +7,8 @@ public class CircleScript : MonoBehaviour
     public SpriteRenderer sp;
     public float rotationSpeed;
 
-    void Start(){
+    void Start()
+    {
         sp = gameObject.GetComponent<SpriteRenderer>();
     }
 
