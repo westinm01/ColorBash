@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Square : MonoBehaviour
 {
-    public Rigidbody2D rb;
     protected virtual void takeDamage(){
 		Destroy(this.gameObject);
 	}
 
-	protected virtual void OnTriggerEnter2D(Collider2D collision){
+	protected virtual void OnCollisionEnter2D(Collision2D collision){
 		if (collision.gameObject.tag == "Player"){
+            Debug.Log("Collided with Player");
 			takeDamage();
 		}
 	}

@@ -43,3 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2243dd1b982e3f4395ba1d3b969b6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sq: {fileID: 3210484509604049942, guid: 6ba3c50806f8533439f749c6ef3f46b0, type: 3}
+  startSpeed: 5
+  speedIncrease: 0
+  timeBetweenSpawns: 2

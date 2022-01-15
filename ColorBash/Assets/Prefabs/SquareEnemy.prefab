@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3532676673087760465}
   - component: {fileID: -406489477284261988}
   - component: {fileID: 3210484509604049942}
+  - component: {fileID: 6988493518543077662}
   - component: {fileID: 5761717162365453925}
   m_Layer: 0
   m_Name: SquareEnemy
@@ -95,7 +96,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.02245146, y: 0.01122582}
@@ -123,7 +124,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19b91de1f614b924da8757f5c6993e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  rb: {fileID: 5761717162365453925}
+--- !u!114 &6988493518543077662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4311390442734216736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d825f2275a1f04ca9e1927191f9ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  squareSpeed: 0
 --- !u!50 &5761717162365453925
 Rigidbody2D:
   serializedVersion: 4
