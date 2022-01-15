@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Square : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Rigidbody2D rb;
+    protected virtual void takeDamage(){
+		Destroy(this.gameObject);
+	}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	protected virtual void OnTriggerEnter2D(Collider2D collision){
+		if (collision.gameObject.tag == "Player"){
+			takeDamage();
+		}
+	}
 }

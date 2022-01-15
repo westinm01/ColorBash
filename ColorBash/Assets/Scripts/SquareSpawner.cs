@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class SquareSpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public Square sq;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public float startSpeed;
+	public float speedIncrease;
+	public float timeBetweenSpawns;
+	private float spawnTimer;
+
+	void Update(){
+		if (spawnTimer >= timeBetweenSpawns){
+            Instantiate(sq, gameObject.transform.position, Quaternion.identity);
+            sq.rb.velocity = new Vector2(-startSpeed, 0);
+		}
+        else{
+            spawnTimer += Time.deltaTime;
+        }
+	}
 }
