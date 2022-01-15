@@ -15,4 +15,13 @@ public class UIScripts : MonoBehaviour
         GameObject.Find("ShopMenu").transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
         GameObject.Find("ShopMenu").transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
     }
+
+    public void BackToMainMenu()
+    {
+        GameObject.Find("ShopMenu").SetActive(false);
+        for (int i = 0; i < GameObject.Find("MainMenu").transform.childCount; ++i)
+        {
+            GameObject.Find("MainMenu").transform.GetChild(i).gameObject.SetActive(true);
+        }
+    }
 }
