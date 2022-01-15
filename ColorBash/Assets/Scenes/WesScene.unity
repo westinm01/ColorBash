@@ -409,6 +409,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1221373902848424793, guid: 227ee6c557a63e44ca64df1df6d12ce9, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221373902848424793, guid: 227ee6c557a63e44ca64df1df6d12ce9, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221373902848424793, guid: 227ee6c557a63e44ca64df1df6d12ce9, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6506729316326673468, guid: 227ee6c557a63e44ca64df1df6d12ce9, type: 3}
       propertyPath: m_Name
       value: SquareEnemy
