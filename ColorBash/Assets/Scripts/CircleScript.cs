@@ -6,7 +6,8 @@ public class CircleScript : MonoBehaviour
 {
     public SpriteRenderer sp;
 
-    void Start(){
+    void Start()
+    {
         sp = gameObject.GetComponent<SpriteRenderer>();
     }
 
