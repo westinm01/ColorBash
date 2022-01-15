@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sq: {fileID: 3210484509604049942, guid: 6ba3c50806f8533439f749c6ef3f46b0, type: 3}
+  tri: {fileID: -7311768276317216020, guid: 4221e10ea34667b40a125804a2d2c420, type: 3}
   startSpeed: 5
   speedIncrease: 0.5
   speedIncreaseFrequency: 5
