@@ -25,4 +25,9 @@ public class CircleScript : MonoBehaviour
         sp.color = Color.green;
     }
 
+    public void setColorYellow(){
+        Debug.Log("Setting color to yellow");
+        sp.color = Color.yellow;
+    }
+
 }
