@@ -5,6 +5,7 @@ using UnityEngine;
 public class CircleScript : MonoBehaviour
 {
     public SpriteRenderer sp;
+    public float rotationSpeed;
 
     void Start(){
         sp = gameObject.GetComponent<SpriteRenderer>();
@@ -28,6 +29,10 @@ public class CircleScript : MonoBehaviour
     public void setColorYellow(){
         Debug.Log("Setting color to yellow");
         sp.color = Color.yellow;
+    }
+
+    void Update(){
+        gameObject.transform.RotateAround(gameObject.transform.position, new Vector3(0, 0, 1), -rotationSpeed);
     }
 
 }
