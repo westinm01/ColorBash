@@ -6,6 +6,7 @@ public class SquareSpawner : MonoBehaviour
 {
 	public Square sq;
     public Triangle tri;
+    public GameManager gm;
 	public float startSpeed;
 	public float speedIncrease;
     public float speedIncreaseFrequency;
@@ -60,6 +61,9 @@ public class SquareSpawner : MonoBehaviour
     }
 
 	void Update(){
+        if (!gm.hasStarted){
+            return;
+        }
 		if (spawnTimer > timeBetweenSpawns){
             spawnNewShape();
             spawnTimer = 0;
