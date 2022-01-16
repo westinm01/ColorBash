@@ -28,7 +28,7 @@ public class Square : MonoBehaviour
 			}
 			else{
 				takeDamage();
-				ScoreScript.scoreValue += 1; 
+				ScoreScript.scoreValue += 10; 
 			}
 		}
 	}
