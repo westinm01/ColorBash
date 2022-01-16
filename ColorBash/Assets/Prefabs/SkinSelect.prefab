@@ -1611,6 +1611,7 @@ GameObject:
   - component: {fileID: 8378408986799356457}
   - component: {fileID: 367079810}
   - component: {fileID: 1325058181}
+  - component: {fileID: 4087845223201280202}
   m_Layer: 5
   m_Name: Switch
   m_TagString: Untagged
@@ -1720,7 +1721,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1325058181}
+      - m_Target: {fileID: 4087845223201280202}
         m_TargetAssemblyTypeName: SwitchSelection, Assembly-CSharp
         m_MethodName: switchSelection
         m_Mode: 1
@@ -1748,6 +1749,21 @@ MonoBehaviour:
   circles: {fileID: 7419150937571733132}
   backgrounds: {fileID: 1659072830690800586}
 --- !u!114 &1325058181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2166303623657968248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b53cff63117e8d4dadf49d7beb23dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inCircle: 1
+  circles: {fileID: 7419150937571733132}
+  backgrounds: {fileID: 1659072830690800586}
+--- !u!114 &4087845223201280202
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2579,9 +2595,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7419150937153855914
 CanvasRenderer:
@@ -2667,7 +2683,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.9989483}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3102,7 +3118,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000054014654}
+  m_AnchoredPosition: {x: 0, y: 0.000016318394}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2419729067045170308
@@ -3131,6 +3147,7 @@ GameObject:
   - component: {fileID: 1473314393969329776}
   - component: {fileID: 587345568}
   - component: {fileID: 137435619}
+  - component: {fileID: 9168885827808538098}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3240,7 +3257,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 137435619}
+      - m_Target: {fileID: 9168885827808538098}
         m_TargetAssemblyTypeName: ChangeCircleUI, Assembly-CSharp
         m_MethodName: ChangeToBackgroundStars
         m_Mode: 2
@@ -3265,6 +3282,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &137435619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7429553154133271479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9168885827808538098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3577,6 +3606,7 @@ GameObject:
   - component: {fileID: 1847248742100859430}
   - component: {fileID: 778562267}
   - component: {fileID: 1673669955}
+  - component: {fileID: 1308766568194709807}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3686,7 +3716,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1673669955}
+      - m_Target: {fileID: 1308766568194709807}
         m_TargetAssemblyTypeName: ChangeCircleUI, Assembly-CSharp
         m_MethodName: ChangeToBackgroundSpace
         m_Mode: 2
@@ -3711,6 +3741,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1673669955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7893179516397143906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1308766568194709807
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3790,6 +3832,7 @@ GameObject:
   - component: {fileID: 2161973386662960853}
   - component: {fileID: 299636449}
   - component: {fileID: 350372183}
+  - component: {fileID: 7509347771910394443}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3899,7 +3942,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 350372183}
+      - m_Target: {fileID: 7509347771910394443}
         m_TargetAssemblyTypeName: ChangeCircleUI, Assembly-CSharp
         m_MethodName: ChangeToBackgroundStars
         m_Mode: 2
@@ -3924,6 +3967,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &350372183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9000691846551712895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7509347771910394443
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4122,7 +4177,7 @@ PrefabInstance:
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 795898339}
+      objectReference: {fileID: 1377699429375964122}
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeToCirclePirate
@@ -4141,14 +4196,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
---- !u!224 &7419150937024261184 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3979141582851097675, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
-  m_PrefabInstance: {fileID: 5894893431352010763}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7419150937217906947 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3979141583028359432, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
+  m_PrefabInstance: {fileID: 5894893431352010763}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &7419150937024261184 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3979141582851097675, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
   m_PrefabInstance: {fileID: 5894893431352010763}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &795898339
@@ -4164,6 +4219,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1621034445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7419150937217906947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1377699429375964122
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4285,7 +4352,7 @@ PrefabInstance:
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1649018436}
+      objectReference: {fileID: 5301274034266262884}
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeToCircleBlank
@@ -4327,6 +4394,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1812659580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894893431291965480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5301274034266262884
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4448,7 +4527,7 @@ PrefabInstance:
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 486788680}
+      objectReference: {fileID: 6090987767959623923}
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeToCircleSerious
@@ -4467,14 +4546,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
---- !u!224 &5894893431616885732 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3979141582851097675, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
-  m_PrefabInstance: {fileID: 7419150937297360815}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5894893431544186535 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3979141583028359432, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
+  m_PrefabInstance: {fileID: 7419150937297360815}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &5894893431616885732 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3979141582851097675, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
   m_PrefabInstance: {fileID: 7419150937297360815}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &486788680
@@ -4490,6 +4569,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1981617413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894893431544186535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6090987767959623923
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4611,7 +4702,7 @@ PrefabInstance:
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 275194459}
+      objectReference: {fileID: 303101120916272152}
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeToCircleDefault
@@ -4630,14 +4721,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
---- !u!1 &5894893430993631725 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3979141583028359432, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
-  m_PrefabInstance: {fileID: 7419150937828927717}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5894893431085329582 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3979141582851097675, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
+  m_PrefabInstance: {fileID: 7419150937828927717}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5894893430993631725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3979141583028359432, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
   m_PrefabInstance: {fileID: 7419150937828927717}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &275194459
@@ -4653,6 +4744,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &534190714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894893430993631725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &303101120916272152
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4774,7 +4877,7 @@ PrefabInstance:
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 813520258}
+      objectReference: {fileID: 4012533797087740870}
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeToCircleNotACircle
@@ -4793,14 +4896,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
---- !u!224 &5894893431101798443 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3979141582851097675, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
-  m_PrefabInstance: {fileID: 7419150937845431392}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5894893430977097064 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3979141583028359432, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
+  m_PrefabInstance: {fileID: 7419150937845431392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &5894893431101798443 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3979141582851097675, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
   m_PrefabInstance: {fileID: 7419150937845431392}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &666230559
@@ -4816,6 +4919,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &813520258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894893430977097064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4012533797087740870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4929,7 +5044,7 @@ PrefabInstance:
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2099551836}
+      objectReference: {fileID: 7192246594618353784}
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeToCircleFlushed
@@ -4971,6 +5086,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2099551836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894893430570058287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7192246594618353784
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5092,7 +5219,7 @@ PrefabInstance:
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1236797927}
+      objectReference: {fileID: 3785432024117693983}
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeToCircleDog
@@ -5111,14 +5238,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
---- !u!1 &5894893430519501633 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3979141583028359432, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
-  m_PrefabInstance: {fileID: 7419150938050527817}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5894893430358754818 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3979141582851097675, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
+  m_PrefabInstance: {fileID: 7419150938050527817}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5894893430519501633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3979141583028359432, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
   m_PrefabInstance: {fileID: 7419150938050527817}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &773096691
@@ -5134,6 +5261,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1236797927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894893430519501633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3785432024117693983
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5255,7 +5394,7 @@ PrefabInstance:
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1159367732}
+      objectReference: {fileID: 7698986673400999012}
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeToCircleCool
@@ -5297,6 +5436,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1159367732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894893430720710398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7698986673400999012
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5418,7 +5569,7 @@ PrefabInstance:
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 923495232}
+      objectReference: {fileID: 3908099698334225519}
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeToCircleChaos
@@ -5437,14 +5588,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
---- !u!224 &5894893430620167019 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3979141582851097675, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
-  m_PrefabInstance: {fileID: 7419150938297163552}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5894893430258093608 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3979141583028359432, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
+  m_PrefabInstance: {fileID: 7419150938297163552}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &5894893430620167019 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3979141582851097675, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
   m_PrefabInstance: {fileID: 7419150938297163552}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &852670789
@@ -5460,6 +5611,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &923495232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894893430258093608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3908099698334225519
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5581,7 +5744,7 @@ PrefabInstance:
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1755720598}
+      objectReference: {fileID: 7106213239973928172}
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeToCirclePizza
@@ -5623,6 +5786,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1755720598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894893429977699309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7106213239973928172
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5744,7 +5919,7 @@ PrefabInstance:
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 245907518}
+      objectReference: {fileID: 4973875996419432721}
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeToCircleNinja
@@ -5786,6 +5961,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &855259497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894893429699308861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4973875996419432721
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5907,7 +6094,7 @@ PrefabInstance:
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 913740378}
+      objectReference: {fileID: 8286809166752152272}
     - target: {fileID: 3979141583028359434, guid: 47752ec59a0d94149b81bb5f47ff3a99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeToCircleBruh
@@ -5949,6 +6136,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &913740378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894893429893829449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8286809166752152272
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
