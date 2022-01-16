@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public bool hasStarted;
     public GameObject GameOverScreen;
+    public AudioSource bgm;
 
     public void StartGame(){
         hasStarted = true;
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
         GameOverScreen.SetActive(true);
         hasStarted = false;
         Time.timeScale = 0;
+        bgm.Pause();
     }
 
     public void QuitGame(){
