@@ -477,6 +477,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &526780954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5894893429893829449, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
+  m_PrefabInstance: {fileID: 1558499150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &526780959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526780954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &534190709 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5894893430993631725, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
+  m_PrefabInstance: {fileID: 1558499150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &534190714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534190709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &549710525
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,6 +761,57 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &659071710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5894893430570058287, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
+  m_PrefabInstance: {fileID: 1558499150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &659071715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659071710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &666230554 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5894893430977097064, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
+  m_PrefabInstance: {fileID: 1558499150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &666230559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666230554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &773096686 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5894893430519501633, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
+  m_PrefabInstance: {fileID: 1558499150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &773096691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773096686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &834938561
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,6 +948,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e25cd1b03c46934b8af15abcd4044b0, type: 3}
+--- !u!1 &852670784 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5894893430258093608, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
+  m_PrefabInstance: {fileID: 1558499150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &852670789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852670784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &855259492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5894893429699308861, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
+  m_PrefabInstance: {fileID: 1558499150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &855259497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855259492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1023894766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -920,6 +1039,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4a27a4d41809f54c8ab7c71dec43b07, type: 3}
+--- !u!1 &1036709622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5894893430720710398, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
+  m_PrefabInstance: {fileID: 1558499150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1036709627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036709622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1129959304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1096,6 +1232,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165659158}
   m_CullTransparentMesh: 1
+--- !u!1 &1232304827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5894893429977699309, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
+  m_PrefabInstance: {fileID: 1558499150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1232304832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232304827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1267643576 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3362065982321102518, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
@@ -1747,14 +1900,14 @@ PrefabInstance:
     - target: {fileID: 5894893429699308863, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4307746585548930876}
+      objectReference: {fileID: 855259497}
     - target: {fileID: 5894893429699308863, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_sprite
+      value: ChangeToCircleNinja
       objectReference: {fileID: 0}
     - target: {fileID: 5894893429699308863, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.SpriteRenderer, UnityEngine
+      value: ChangeCircleUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5894893429699308863, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -1771,14 +1924,14 @@ PrefabInstance:
     - target: {fileID: 5894893429893829451, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4307746585548930876}
+      objectReference: {fileID: 526780959}
     - target: {fileID: 5894893429893829451, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_sprite
+      value: ChangeToCircleBruh
       objectReference: {fileID: 0}
     - target: {fileID: 5894893429893829451, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.SpriteRenderer, UnityEngine
+      value: ChangeCircleUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5894893429893829451, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -1795,14 +1948,14 @@ PrefabInstance:
     - target: {fileID: 5894893429977699311, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4307746585548930876}
+      objectReference: {fileID: 1232304832}
     - target: {fileID: 5894893429977699311, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_sprite
+      value: ChangeToCirclePizza
       objectReference: {fileID: 0}
     - target: {fileID: 5894893429977699311, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.SpriteRenderer, UnityEngine
+      value: ChangeCircleUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5894893429977699311, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -1819,14 +1972,14 @@ PrefabInstance:
     - target: {fileID: 5894893430258093610, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4307746585548930876}
+      objectReference: {fileID: 852670789}
     - target: {fileID: 5894893430258093610, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_sprite
+      value: ChangeToCircleChaos
       objectReference: {fileID: 0}
     - target: {fileID: 5894893430258093610, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.SpriteRenderer, UnityEngine
+      value: ChangeCircleUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5894893430258093610, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -1843,14 +1996,14 @@ PrefabInstance:
     - target: {fileID: 5894893430519501635, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4307746585548930876}
+      objectReference: {fileID: 773096691}
     - target: {fileID: 5894893430519501635, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_sprite
+      value: ChangeToCircleDog
       objectReference: {fileID: 0}
     - target: {fileID: 5894893430519501635, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.SpriteRenderer, UnityEngine
+      value: ChangeCircleUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5894893430519501635, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -1867,14 +2020,14 @@ PrefabInstance:
     - target: {fileID: 5894893430570058285, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4307746585548930876}
+      objectReference: {fileID: 659071715}
     - target: {fileID: 5894893430570058285, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_sprite
+      value: ChangeToCircleFlushed
       objectReference: {fileID: 0}
     - target: {fileID: 5894893430570058285, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.SpriteRenderer, UnityEngine
+      value: ChangeCircleUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5894893430570058285, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -1891,14 +2044,14 @@ PrefabInstance:
     - target: {fileID: 5894893430720710396, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4307746585548930876}
+      objectReference: {fileID: 1036709627}
     - target: {fileID: 5894893430720710396, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_sprite
+      value: ChangeToCircleCool
       objectReference: {fileID: 0}
     - target: {fileID: 5894893430720710396, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.SpriteRenderer, UnityEngine
+      value: ChangeCircleUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5894893430720710396, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -1915,14 +2068,14 @@ PrefabInstance:
     - target: {fileID: 5894893430977097066, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4307746585548930876}
+      objectReference: {fileID: 666230559}
     - target: {fileID: 5894893430977097066, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_sprite
+      value: ChangeToCircleNotACircle
       objectReference: {fileID: 0}
     - target: {fileID: 5894893430977097066, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.SpriteRenderer, UnityEngine
+      value: ChangeCircleUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5894893430977097066, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -1939,14 +2092,14 @@ PrefabInstance:
     - target: {fileID: 5894893430993631727, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4307746585548930876}
+      objectReference: {fileID: 534190714}
     - target: {fileID: 5894893430993631727, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_sprite
+      value: ChangeToCircleDefault
       objectReference: {fileID: 0}
     - target: {fileID: 5894893430993631727, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.SpriteRenderer, UnityEngine
+      value: ChangeCircleUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5894893430993631727, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -1963,14 +2116,14 @@ PrefabInstance:
     - target: {fileID: 5894893431291965482, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4307746585548930876}
+      objectReference: {fileID: 1812659580}
     - target: {fileID: 5894893431291965482, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_sprite
+      value: ChangeToCircleBlank
       objectReference: {fileID: 0}
     - target: {fileID: 5894893431291965482, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.SpriteRenderer, UnityEngine
+      value: ChangeCircleUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5894893431291965482, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -1987,14 +2140,14 @@ PrefabInstance:
     - target: {fileID: 5894893431544186533, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4307746585548930876}
+      objectReference: {fileID: 1981617413}
     - target: {fileID: 5894893431544186533, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_sprite
+      value: ChangeToCircleSerious
       objectReference: {fileID: 0}
     - target: {fileID: 5894893431544186533, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.SpriteRenderer, UnityEngine
+      value: ChangeCircleUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5894893431544186533, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -2023,14 +2176,14 @@ PrefabInstance:
     - target: {fileID: 7419150937217906945, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4307746585548930876}
+      objectReference: {fileID: 1621034445}
     - target: {fileID: 7419150937217906945, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_sprite
+      value: ChangeToCirclePirate
       objectReference: {fileID: 0}
     - target: {fileID: 7419150937217906945, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.SpriteRenderer, UnityEngine
+      value: ChangeCircleUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7419150937217906945, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -2146,6 +2299,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
+--- !u!1 &1621034440 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7419150937217906947, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
+  m_PrefabInstance: {fileID: 1558499150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1621034445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621034440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1674953131
 GameObject:
   m_ObjectHideFlags: 0
@@ -2293,11 +2463,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1812659575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5894893431291965480, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
+  m_PrefabInstance: {fileID: 1558499150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1812659580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812659575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1832618453 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7419150938292765517, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
   m_PrefabInstance: {fileID: 1558499150}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1981617408 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5894893431544186535, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
+  m_PrefabInstance: {fileID: 1558499150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1981617413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981617408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106882969469f6541b235b3784c39e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2012174188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2630,11 +2834,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47f0c7e0a97cfea4a920188d2e230651, type: 3}
---- !u!212 &4307746585548930876 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 4307746585501112292, guid: 47f0c7e0a97cfea4a920188d2e230651, type: 3}
-  m_PrefabInstance: {fileID: 4307746585548930875}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7282333080756214153
 PrefabInstance:
   m_ObjectHideFlags: 0
