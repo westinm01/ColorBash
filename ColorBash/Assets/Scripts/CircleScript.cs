@@ -63,7 +63,7 @@ public class CircleScript : MonoBehaviour
 
     void Update(){
         gameObject.transform.RotateAround(gameObject.transform.position, new Vector3(0, 0, 1), -rotationSpeed);
-        if (ScoreScript.scoreValue >= flipScore){
+        if (ScoreScript.scoreValue >= flipScore && gm.canFlip){
             Debug.Log(ScoreScript.scoreValue);
             if (Input.GetKeyDown("space") && (gameObject.transform.position.y <= minY || gameObject.transform.position.y >= maxY)){
                 flip();

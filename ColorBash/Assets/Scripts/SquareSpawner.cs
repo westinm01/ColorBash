@@ -148,23 +148,31 @@ public class SquareSpawner : MonoBehaviour
             return;
         }
         int randShape = Random.Range(0, maxShapes * 10);
+        // int randShape = 26;
         // Debug.Log(randShape);
         // switch (randShape){
             // case 0:
-        if (randShape < 12){
+        if (randShape < 13){
             Square newSquare = Instantiate(sq, gameObject.transform.position, Quaternion.identity);
             newSquare.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
             newSquare.GetComponent<SpriteRenderer>().color = getRandomColor();
             newSquare.gameObject.transform.RotateAround(newSquare.gameObject.transform.position, new Vector3(0, 0, 1), rotation);
         }
-        else if (randShape < 25){
+        else if (randShape < 27){
             Triangle newTri = Instantiate(tri, gameObject.transform.position, Quaternion.identity);
             newTri.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
             newTri.GetComponent<SpriteRenderer>().color = getRandomColor();
             newTri.gameObject.transform.RotateAround(newTri.gameObject.transform.position, new Vector3(0, 0, 1), rotation);
         }
         else if (randShape < 30){
-            CircleEnemy newCri = Instantiate(cri, gameObject.transform);
+            Vector3 adjustmentV = Vector3.zero;
+            if (rotation == 0){
+                adjustmentV = new Vector3(0, 0.75f, 0);
+            }
+            else if (rotation == 180){
+                adjustmentV = new Vector3(0, -0.75f, 0);
+            }
+            CircleEnemy newCri = Instantiate(cri, gameObject.transform.position + adjustmentV, Quaternion.identity);
             newCri.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
             newCri.gameObject.transform.RotateAround(newCri.gameObject.transform.position, new Vector3(0, 0, 1), rotation);
         }
