@@ -141,6 +141,7 @@ MonoBehaviour:
   square: {fileID: 0}
   isTouching: 0
   explosion: {fileID: 1538658660534414159, guid: 94427806ab058c046b1baf90f96d4486, type: 3}
+  deathClip: {fileID: 8300000, guid: 59d13f335652ea84d8d037809cb68fae, type: 3}
 --- !u!50 &5761717162365453925
 Rigidbody2D:
   serializedVersion: 4
@@ -208,8 +209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   square: {fileID: 3532676673087760465}
   explosion: {fileID: 1538658660534414159, guid: 94427806ab058c046b1baf90f96d4486, type: 3}
-  aud: {fileID: 0}
-  c: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: 59d13f335652ea84d8d037809cb68fae, type: 3}
 --- !u!61 &7621358759331614602
 BoxCollider2D:
   m_ObjectHideFlags: 0

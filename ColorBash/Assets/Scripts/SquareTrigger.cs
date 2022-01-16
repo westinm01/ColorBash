@@ -6,24 +6,32 @@ public class SquareTrigger : MonoBehaviour
 {
     public SpriteRenderer square;
 	public ParticleSystem explosion;
-	public AudioSource aud;
-	public AudioClip c;
+	public AudioClip deathClip;
 	void Start()
 	{
 		square = gameObject.GetComponentInParent<SpriteRenderer>();
-		aud = gameObject.GetComponentInParent<AudioSource>();
-	}
-    protected virtual void takeDamage(){
-		// transform.parent.gameObject.SetActive(false);
-		Destroy(transform.parent.gameObject);
 	}
 
 	protected virtual void playDeathNoise(){
 		Debug.Log("Playing death noise");
-		aud.clip = c;
-		AudioSource.PlayClipAtPoint(c, gameObject.transform.position);
+		AudioSource.PlayClipAtPoint(deathClip, gameObject.transform.position);
 	}
 
+	protected virtual void spawnExplosion(){
+        // Debug.Log("explosion");
+        ParticleSystem temp = Instantiate(explosion, transform.position, Quaternion.identity);
+        ParticleSystem.MainModule tempmain = temp.main;
+        tempmain.startColor = gameObject.GetComponentInParent<SpriteRenderer>().color;
+        temp.Play();
+        Destroy(temp, 1f);
+    }
+
+	protected virtual void takeDamage(){
+		// transform.parent.gameObject.SetActive(false);
+		playDeathNoise();
+		spawnExplosion();
+		Destroy(transform.parent.gameObject);
+	}
 	protected virtual void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.gameObject.tag == "Player"){
@@ -34,14 +42,7 @@ public class SquareTrigger : MonoBehaviour
 			}
 			else
 			{
-				playDeathNoise();
-				ParticleSystem temp = Instantiate(explosion, transform.position, Quaternion.identity);
-				ParticleSystem.MainModule tempmain = temp.main;
-				tempmain.startColor = gameObject.GetComponentInParent<SpriteRenderer>().color;
-				temp.Play();
-				Destroy(temp, 1f);
 				takeDamage();
-				Debug.Log("explosion");
 				ScoreScript.scoreValue += 10;
 				SaveData.LoadInfo();
 				Info.points += 10;

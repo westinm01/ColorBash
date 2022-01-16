@@ -17,11 +17,6 @@ public class TriangleTrigger : SquareTrigger
                     Info.highScore = ScoreScript.scoreValue;
                 }
                 SaveData.SaveInfo();
-                ParticleSystem temp = Instantiate(explosion, transform.position, Quaternion.identity);
-                ParticleSystem.MainModule tempmain = temp.main;
-				tempmain.startColor = gameObject.GetComponentInParent<SpriteRenderer>().color;
-				temp.Play();
-				Destroy(temp, 1f);
                 takeDamage();
             }
             else{

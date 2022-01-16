@@ -9,6 +9,7 @@ public class Square : MonoBehaviour
 
     protected SpriteRenderer circleSprite;
 	public ParticleSystem explosion;
+    public AudioClip deathClip;
 
 	void Start()
 	{
@@ -16,7 +17,23 @@ public class Square : MonoBehaviour
         circleSprite = GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<SpriteRenderer>();
         isTouching = false;
 	}
+
+    protected virtual void playDeathNoise(){
+		Debug.Log("Playing death noise");
+		AudioSource.PlayClipAtPoint(deathClip, gameObject.transform.position);
+	}
+    
+    protected virtual void spawnExplosion(){
+        // Debug.Log("explosion");
+        ParticleSystem temp = Instantiate(explosion, transform.position, Quaternion.identity);
+        ParticleSystem.MainModule tempmain = temp.main;
+        tempmain.startColor = gameObject.GetComponent<SpriteRenderer>().color;
+        temp.Play();
+        Destroy(temp, 1f);
+    }
     protected virtual void takeDamage(){
+        playDeathNoise();
+        spawnExplosion();
 		Destroy(this.gameObject);
 	}
 
@@ -35,15 +52,8 @@ public class Square : MonoBehaviour
                     Info.highScore = ScoreScript.scoreValue;
                 }
                 SaveData.SaveInfo();
-				ParticleSystem temp = Instantiate(explosion, transform.position, Quaternion.identity);
-				ParticleSystem.MainModule tempmain = temp.main;
-				tempmain.startColor = gameObject.GetComponent<SpriteRenderer>().color;
-				temp.Play();
-				Destroy(temp, 1f);
 				takeDamage();
-				Debug.Log("explosion");
             }
-
 		}
 	}
 
@@ -59,7 +69,6 @@ public class Square : MonoBehaviour
                     Info.highScore = ScoreScript.scoreValue;
                 }
                 SaveData.SaveInfo();
-
                 takeDamage();
             }
         }
