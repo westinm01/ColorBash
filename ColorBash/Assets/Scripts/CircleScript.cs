@@ -6,6 +6,7 @@ public class CircleScript : MonoBehaviour
 {
     public SpriteRenderer sp;
     public float rotationSpeed;
+    public Vector2 knockbackDistance;
 
     void Start()
     {
