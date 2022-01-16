@@ -38,6 +38,8 @@ public class SaveData : MonoBehaviour
             Info.points = data.points;
             Info.circles = data.circles;
             Info.backgrounds = data.backgrounds;
+            Info.circle = data.circle;
+            Info.background = data.background;
 
             return data;
         }
