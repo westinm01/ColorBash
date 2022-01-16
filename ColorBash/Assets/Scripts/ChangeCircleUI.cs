@@ -147,7 +147,7 @@ public class ChangeCircleUI : MonoBehaviour
         }
     }
 
-    public void ChangeToBackgroundStars(Sprite sprite)
+    public void ChangeToBackgroundBoreal(Sprite sprite)
     {
         if (Info.backgrounds[1] == true)
         {
@@ -158,7 +158,7 @@ public class ChangeCircleUI : MonoBehaviour
         }
     }
 
-    public void ChangeToBackgroundBoreal(Sprite sprite)
+    public void ChangeToBackgroundSummerSky(Sprite sprite)
     {
         if (Info.backgrounds[2] == true)
         {

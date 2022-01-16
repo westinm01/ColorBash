@@ -297,7 +297,7 @@ public class UIScripts : MonoBehaviour
         SaveData.SaveInfo();
     }
 
-    public void UnlockBackGroundStars()
+    public void UnlockBackGroundBoreal()
     {
         SaveData.LoadInfo();
         if (Info.backgrounds[1] == true)
@@ -318,7 +318,7 @@ public class UIScripts : MonoBehaviour
         SaveData.SaveInfo();
     }
 
-    public void UnlockBackGroundBoreal()
+    public void UnlockBackGroundSummerSky()
     {
         SaveData.LoadInfo();
         if (Info.backgrounds[2] == true)
