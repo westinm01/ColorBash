@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public bool hasStarted;
+    public bool canFlip;
     public GameObject spawner;
     public GameObject reverseSpawner;
     public GameObject GameOverScreen;
@@ -49,8 +50,10 @@ public class GameManager : MonoBehaviour
     }
 
     public void EnableFlip(){
-        reverseSpawner.GetComponent<SquareSpawner>().canSpawn = true;
-        spawner.GetComponent<SquareSpawner>().maxShapes = 3;
+        if (canFlip){
+            reverseSpawner.GetComponent<SquareSpawner>().canSpawn = true;
+            spawner.GetComponent<SquareSpawner>().maxShapes = 3;        
+        }
     }
 
     // Start is called before the first frame update

@@ -148,6 +148,7 @@ public class SquareSpawner : MonoBehaviour
             return;
         }
         int randShape = Random.Range(0, maxShapes * 10);
+        // int randShape = 26;
         // Debug.Log(randShape);
         // switch (randShape){
             // case 0:
@@ -164,7 +165,14 @@ public class SquareSpawner : MonoBehaviour
             newTri.gameObject.transform.RotateAround(newTri.gameObject.transform.position, new Vector3(0, 0, 1), rotation);
         }
         else if (randShape < 30){
-            CircleEnemy newCri = Instantiate(cri, gameObject.transform);
+            Vector3 adjustmentV = Vector3.zero;
+            if (rotation == 0){
+                adjustmentV = new Vector3(0, 0.75f, 0);
+            }
+            else if (rotation == 180){
+                adjustmentV = new Vector3(0, -0.75f, 0);
+            }
+            CircleEnemy newCri = Instantiate(cri, gameObject.transform.position + adjustmentV, Quaternion.identity);
             newCri.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
             newCri.gameObject.transform.RotateAround(newCri.gameObject.transform.position, new Vector3(0, 0, 1), rotation);
         }
