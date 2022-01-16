@@ -11,14 +11,21 @@ public class SquareSpawner : MonoBehaviour
 	public float speedIncrease;
     public float speedIncreaseFrequency;
 	public int timeBetweenSpawns;
+    public float spawnIncreaseRate;
+    public float spawnIncreaseFrequency;
+    public float maxSpawnIncrease;
     private int numIncreases;
 	private float spawnTimer;
     private float speedTimer;
+    private float baseSpawnTimer;
+    private float spawnIncreaseTimer;
 
     void Start(){
         spawnTimer = 0;
         speedTimer = 0;
         numIncreases = 0;
+        baseSpawnTimer = 0.1f;
+        spawnIncreaseTimer = 0;
     }
 
     Color getRandomColor(){
@@ -65,13 +72,24 @@ public class SquareSpawner : MonoBehaviour
             return;
         }
 
-        int randNum = Random.Range(0, timeBetweenSpawns);
+        
 		if (spawnTimer > timeBetweenSpawns){
             spawnNewShape();
-            spawnTimer = 0;
+            spawnTimer = Random.Range(baseSpawnTimer, maxSpawnIncrease);
 		}
         else{
             spawnTimer += Time.deltaTime;
+        }
+
+        if (spawnIncreaseTimer > spawnIncreaseFrequency){
+            Debug.Log("Speed up spawn");
+            if (baseSpawnTimer < maxSpawnIncrease + spawnIncreaseRate){
+                baseSpawnTimer += spawnIncreaseRate;
+            }
+            spawnIncreaseTimer = 0;
+        }
+        else{
+            spawnIncreaseTimer+= Time.deltaTime;
         }
 
         if (speedTimer > speedIncreaseFrequency){

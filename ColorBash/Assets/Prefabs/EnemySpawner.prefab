@@ -49,4 +49,7 @@ MonoBehaviour:
   startSpeed: 5
   speedIncrease: 0.5
   speedIncreaseFrequency: 5
-  timeBetweenSpawns: 1.5
+  timeBetweenSpawns: 2
+  spawnIncreaseRate: 0.25
+  spawnIncreaseFrequency: 15
+  maxSpawnIncrease: 1.5
