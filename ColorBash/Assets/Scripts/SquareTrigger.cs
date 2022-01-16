@@ -28,7 +28,6 @@ public class SquareTrigger : MonoBehaviour
 				ScoreScript.scoreValue += 10;
 				SaveData.LoadInfo();
 				Info.points += 10;
-
 				if (ScoreScript.scoreValue > Info.highScore)
 				{
 					Info.highScore = ScoreScript.scoreValue;
