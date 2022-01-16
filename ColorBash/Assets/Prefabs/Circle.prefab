@@ -140,3 +140,4 @@ MonoBehaviour:
   rotationSpeedIncrease: 0.25
   rotationSpeedFrequency: 5
   knockbackDistance: {x: 0, y: 0}
+  explosion: {fileID: 1538658660534414159, guid: 94427806ab058c046b1baf90f96d4486, type: 3}

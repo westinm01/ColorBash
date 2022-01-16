@@ -8,6 +8,7 @@ public class Square : MonoBehaviour
     [HideInInspector] public bool isTouching;
 
     protected SpriteRenderer circleSprite;
+	public ParticleSystem explosion;
 
 	void Start()
 	{
@@ -29,14 +30,18 @@ public class Square : MonoBehaviour
 			else{
                 SaveData.LoadInfo();
                 Info.points += 10;
-
                 if (ScoreScript.scoreValue > Info.highScore)
                 {
                     Info.highScore = ScoreScript.scoreValue;
                 }
                 SaveData.SaveInfo();
-
+				ParticleSystem temp = Instantiate(explosion, transform.position, Quaternion.identity);
+				ParticleSystem.MainModule tempmain = temp.main;
+				tempmain.startColor = gameObject.GetComponent<SpriteRenderer>().color;
+				temp.Play();
+				Destroy(temp, 1f);
 				takeDamage();
+				Debug.Log("explosion");
             }
 
 		}
