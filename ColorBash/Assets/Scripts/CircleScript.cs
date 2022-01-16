@@ -11,7 +11,7 @@ public class CircleScript : MonoBehaviour
     public float rotationSpeedFrequency;
     public Vector2 knockbackDistance;
     private float rotationTimer;
-
+    public ParticleSystem explosion;
     void Start()
     {
         sp = gameObject.GetComponent<SpriteRenderer>();
@@ -49,6 +49,11 @@ public class CircleScript : MonoBehaviour
         sp.color = Color.white;
     }
 
+    protected virtual void OnCollisionEnter2D(Collision2D collision){
+        if ( collision.gameObject.tag == "Player"){
+            explosion.GetComponent<ParticleSystem>().Play();
+        }
+    }
     void Update(){
         gameObject.transform.RotateAround(gameObject.transform.position, new Vector3(0, 0, 1), -rotationSpeed);
         if (gm.hasStarted){
