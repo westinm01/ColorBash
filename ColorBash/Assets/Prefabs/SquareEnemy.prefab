@@ -197,6 +197,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   square: {fileID: 3532676673087760465}
+  isTouching: 0
+  explosion: {fileID: 1538658660534414159, guid: 94427806ab058c046b1baf90f96d4486, type: 3}
 --- !u!114 &6988493518543077662
 MonoBehaviour:
   m_ObjectHideFlags: 0
