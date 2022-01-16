@@ -8,7 +8,7 @@ public class Triangle : Square
 		if (collision.gameObject.tag == "Player"){
             Debug.Log("Collided with Player");
             if (collision.gameObject.GetComponent<SpriteRenderer>().color != this.gameObject.GetComponent<SpriteRenderer>().color){
-                ScoreScript.scoreValue += 1; 
+                ScoreScript.scoreValue += 10; 
                 takeDamage();
             }
             else{
