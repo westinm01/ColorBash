@@ -12,7 +12,7 @@ public class SaveData : MonoBehaviour
         string path = Application.persistentDataPath + "/save.stats";
         FileStream stream = new FileStream(path, FileMode.OpenOrCreate);
 
-        SaveType data = new SaveType(Info.points);
+        SaveType data = new SaveType(Info.points, Info.circles, Info.backgrounds, Info.highScore);
 
         formatter.Serialize(stream, data);
         stream.Close();
@@ -33,8 +33,11 @@ public class SaveData : MonoBehaviour
             FileStream stream = new FileStream(path, FileMode.Open);
 
             SaveType data = formatter.Deserialize(stream) as SaveType;
+            stream.Close();
 
             Info.points = data.points;
+            Info.circles = data.circles;
+            Info.backgrounds = data.backgrounds;
 
             return data;
         }

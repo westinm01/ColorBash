@@ -9,8 +9,9 @@ public class Test : MonoBehaviour
     {
         SaveType data = SaveData.LoadInfo();
         Debug.Log(Info.points);
-        ++Info.points;
+        Info.points += 50;
         SaveData.SaveInfo();
         Debug.Log(Info.points);
+        Debug.Log(Info.circles[1]);
     }
 }
