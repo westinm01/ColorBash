@@ -7,17 +7,31 @@ public class SquareSpawner : MonoBehaviour
 	public Square sq;
     public Triangle tri;
     public GameManager gm;
+
+    [Header("Speed variables")]
 	public float startSpeed;
+    public float maxSpeed;
 	public float speedIncrease;
     public float speedIncreaseFrequency;
-	public float timeBetweenSpawns;
+    [Header("Spawn variables")]
+	public int timeBetweenSpawns;
+    public float spawnIncreaseRate;
+    public float spawnIncreaseFrequency;
+    public float maxSpawnIncrease;
     private int numIncreases;
 	private float spawnTimer;
     private float speedTimer;
+
+    private float baseSpawnTimer;
+    private float spawnIncreaseTimer;
+
+
     void Start(){
         spawnTimer = 0;
         speedTimer = 0;
         numIncreases = 0;
+        baseSpawnTimer = 0.1f;
+        spawnIncreaseTimer = 0;
     }
 
     Color getRandomColor(){
@@ -146,17 +160,38 @@ public class SquareSpawner : MonoBehaviour
         if (!gm.hasStarted){
             return;
         }
+
+        
 		if (spawnTimer > timeBetweenSpawns){
             spawnNewShape();
-            spawnTimer = 0;
+            spawnTimer = Random.Range(baseSpawnTimer, maxSpawnIncrease);
 		}
         else{
             spawnTimer += Time.deltaTime;
         }
 
+        if (spawnIncreaseTimer > spawnIncreaseFrequency){
+            Debug.Log("Speed up spawn");
+            if (baseSpawnTimer < maxSpawnIncrease + spawnIncreaseRate){
+                baseSpawnTimer += spawnIncreaseRate;
+                spawnIncreaseTimer = 0;
+            }
+            else{
+                Debug.Log("Max spawn rate reached");
+            }
+        }
+        else{
+            spawnIncreaseTimer+= Time.deltaTime;
+        }
+
         if (speedTimer > speedIncreaseFrequency){
-            numIncreases++;
-            speedTimer = 0;
+            if (speedIncrease * numIncreases < maxSpeed){
+                numIncreases++;
+                speedTimer = 0;
+            }
+            else{
+                Debug.Log("Max speed reached");
+            }
         }
         else{
             speedTimer += Time.deltaTime;

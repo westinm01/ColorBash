@@ -10,9 +10,17 @@ public class GameManager : MonoBehaviour
         hasStarted = true;
     }
 
+    public void GameOver(){
+        Debug.Log("Game Over");
+        hasStarted = false;
+        Time.timeScale = 0;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         hasStarted = false;
+        SaveData.LoadInfo();
+        SaveData.SaveInfo();
     }
 }
