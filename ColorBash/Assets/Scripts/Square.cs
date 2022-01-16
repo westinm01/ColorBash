@@ -17,13 +17,24 @@ public class Square : MonoBehaviour
         circleSprite = GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<SpriteRenderer>();
         isTouching = false;
 	}
-    protected virtual void takeDamage(){
-		Destroy(this.gameObject);
-	}
 
     protected virtual void playDeathNoise(){
 		Debug.Log("Playing death noise");
 		AudioSource.PlayClipAtPoint(deathClip, gameObject.transform.position);
+	}
+    
+    protected virtual void spawnExplosion(){
+        // Debug.Log("explosion");
+        ParticleSystem temp = Instantiate(explosion, transform.position, Quaternion.identity);
+        ParticleSystem.MainModule tempmain = temp.main;
+        tempmain.startColor = gameObject.GetComponent<SpriteRenderer>().color;
+        temp.Play();
+        Destroy(temp, 1f);
+    }
+    protected virtual void takeDamage(){
+        playDeathNoise();
+        spawnExplosion();
+		Destroy(this.gameObject);
 	}
 
 	protected virtual void OnCollisionEnter2D(Collision2D collision){
@@ -34,7 +45,6 @@ public class Square : MonoBehaviour
                 isTouching = true;
 			}
 			else{
-                playDeathNoise();
                 SaveData.LoadInfo();
                 Info.points += 10;
                 if (ScoreScript.scoreValue > Info.highScore)
@@ -42,15 +52,8 @@ public class Square : MonoBehaviour
                     Info.highScore = ScoreScript.scoreValue;
                 }
                 SaveData.SaveInfo();
-				ParticleSystem temp = Instantiate(explosion, transform.position, Quaternion.identity);
-				ParticleSystem.MainModule tempmain = temp.main;
-				tempmain.startColor = gameObject.GetComponent<SpriteRenderer>().color;
-				temp.Play();
-				Destroy(temp, 1f);
 				takeDamage();
-				Debug.Log("explosion");
             }
-
 		}
 	}
 
@@ -66,7 +69,6 @@ public class Square : MonoBehaviour
                     Info.highScore = ScoreScript.scoreValue;
                 }
                 SaveData.SaveInfo();
-
                 takeDamage();
             }
         }
