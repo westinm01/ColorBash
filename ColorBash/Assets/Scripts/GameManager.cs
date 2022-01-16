@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         hasStarted = false;
-        newHighScore = true;
+        newHighScore = false;
         SaveData.LoadInfo();
         SaveData.SaveInfo();
     }
