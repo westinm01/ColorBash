@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -37,6 +37,16 @@ public class CircleScript : MonoBehaviour
     public void setColorYellow(){
         Debug.Log("Setting color to yellow");
         sp.color = Color.yellow;
+    }
+
+    public void setColorMagenta(){
+        Debug.Log("Setting color to magenta");
+        sp.color = Color.magenta;
+    }
+
+    public void setColorWhite(){
+        Debug.Log("Setting color to white");
+        sp.color = Color.white;
     }
 
     void Update(){
