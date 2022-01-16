@@ -6,7 +6,12 @@ public class SquareSpawner : MonoBehaviour
 {
 	public Square sq;
     public Triangle tri;
+    public CircleEnemy cri;
     public GameManager gm;
+
+    public int rotation;
+    public int maxShapes;
+    public bool canSpawn;
 
     [Header("Speed variables")]
 	public float startSpeed;
@@ -139,21 +144,30 @@ public class SquareSpawner : MonoBehaviour
         }
     }
     void spawnNewShape(){
-        int randShape = Random.Range(0, 2);
-        // Debug.Log(randShape);
-        switch (randShape){
-            case 0:
-                Square newSquare = Instantiate(sq, gameObject.transform.position, Quaternion.identity);
-                newSquare.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
-                newSquare.GetComponent<SpriteRenderer>().color = getRandomColor();
-                break;
-            case 1:
-                Triangle newTri = Instantiate(tri, gameObject.transform.position, Quaternion.identity);
-                newTri.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
-                newTri.GetComponent<SpriteRenderer>().color = getRandomColor();
-                break;
+        if (!canSpawn){
+            return;
         }
-
+        int randShape = Random.Range(0, maxShapes * 10);
+        // Debug.Log(randShape);
+        // switch (randShape){
+            // case 0:
+        if (randShape < 12){
+            Square newSquare = Instantiate(sq, gameObject.transform.position, Quaternion.identity);
+            newSquare.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
+            newSquare.GetComponent<SpriteRenderer>().color = getRandomColor();
+            newSquare.gameObject.transform.RotateAround(newSquare.gameObject.transform.position, new Vector3(0, 0, 1), rotation);
+        }
+        else if (randShape < 25){
+            Triangle newTri = Instantiate(tri, gameObject.transform.position, Quaternion.identity);
+            newTri.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
+            newTri.GetComponent<SpriteRenderer>().color = getRandomColor();
+            newTri.gameObject.transform.RotateAround(newTri.gameObject.transform.position, new Vector3(0, 0, 1), rotation);
+        }
+        else if (randShape < 30){
+            CircleEnemy newCri = Instantiate(cri, gameObject.transform);
+            newCri.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
+            newCri.gameObject.transform.RotateAround(newCri.gameObject.transform.position, new Vector3(0, 0, 1), rotation);
+        }
     }
 
 	void Update(){

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameOverLineScript : MonoBehaviour
 {
-    public GameManager gm;
+    [HideInInspector] public GameManager gm;
 
 	public void OnTriggerEnter2D(Collider2D collision)
 	{
