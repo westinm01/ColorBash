@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ShopScoreText : MonoBehaviour
 {
@@ -12,6 +13,6 @@ public class ShopScoreText : MonoBehaviour
 
     void UpdateScoreText()
     {
-        gameObject.GetComponent<Text>().text = "Points: " + Info.points;
+        gameObject.GetComponent<TextMeshProUGUI>().text = "Points: " + Info.points;
     }
 }
