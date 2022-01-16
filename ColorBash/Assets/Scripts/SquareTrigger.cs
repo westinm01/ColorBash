@@ -7,13 +7,14 @@ public class SquareTrigger : MonoBehaviour
     public SpriteRenderer square;
 	public ParticleSystem explosion;
 	public AudioClip deathClip;
+	private GameManager gm;
 	void Start()
 	{
 		square = gameObject.GetComponentInParent<SpriteRenderer>();
 	}
 
 	protected virtual void playDeathNoise(){
-		Debug.Log("Playing death noise");
+		// Debug.Log("Playing death noise");
 		AudioSource.PlayClipAtPoint(deathClip, gameObject.transform.position);
 	}
 
@@ -48,6 +49,7 @@ public class SquareTrigger : MonoBehaviour
 				Info.points += 10;
 				if (ScoreScript.scoreValue > Info.highScore)
 				{
+					
 					Info.highScore = ScoreScript.scoreValue;
 				}
 				SaveData.SaveInfo();

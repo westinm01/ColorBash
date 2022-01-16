@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public bool hasStarted;
     public GameObject GameOverScreen;
     public AudioSource bgm;
+    public bool newHighScore;
 
     public void StartGame(){
         hasStarted = true;
@@ -35,6 +36,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         hasStarted = false;
+        newHighScore = false;
         SaveData.LoadInfo();
         SaveData.SaveInfo();
     }

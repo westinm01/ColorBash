@@ -1238,6 +1238,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060746368}
   m_CullTransparentMesh: 1
+--- !u!1 &1163863943 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7419150938292765517, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
+  m_PrefabInstance: {fileID: 1675124502}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1214119909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1437,7 +1442,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1163863943}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1541,6 +1546,10 @@ PrefabInstance:
     - target: {fileID: 1441028268339573896, guid: e2a5551e481980c4cbaecc4d2b1a1782, type: 3}
       propertyPath: m_Name
       value: QuitButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1485937623823709571, guid: e2a5551e481980c4cbaecc4d2b1a1782, type: 3}
+      propertyPath: m_Volume
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 1515363567863938844, guid: e2a5551e481980c4cbaecc4d2b1a1782, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
