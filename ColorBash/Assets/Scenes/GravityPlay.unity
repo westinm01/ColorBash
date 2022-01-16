@@ -2042,6 +2042,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1221804061}
     - target: {fileID: 2516291170810580179, guid: fb368fd34866f2447a995b12bdae69e6, type: 3}
+      propertyPath: canFlip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2516291170810580179, guid: fb368fd34866f2447a995b12bdae69e6, type: 3}
       propertyPath: spawner
       value: 
       objectReference: {fileID: 1540240131}
