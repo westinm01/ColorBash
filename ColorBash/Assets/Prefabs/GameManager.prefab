@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3229378450361194506
+--- !u!1 &2516291170810580177
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,45 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3312119138262001470}
-  - component: {fileID: 8493839628881837149}
+  - component: {fileID: 2516291170810580176}
+  - component: {fileID: 2516291170810580179}
   m_Layer: 0
-  m_Name: EnemySpawner
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3312119138262001470
+--- !u!4 &2516291170810580176
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3229378450361194506}
+  m_GameObject: {fileID: 2516291170810580177}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.2897625, y: -2.1398447, z: -0.040979017}
+  m_LocalPosition: {x: -21.474312, y: 4.715281, z: 233.95021}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8493839628881837149
+--- !u!114 &2516291170810580179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3229378450361194506}
+  m_GameObject: {fileID: 2516291170810580177}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2243dd1b982e3f4395ba1d3b969b6f5, type: 3}
+  m_Script: {fileID: 11500000, guid: be828f6ca1e051f498bfce09e4f1a2e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sq: {fileID: 3210484509604049942, guid: 6ba3c50806f8533439f749c6ef3f46b0, type: 3}
-  tri: {fileID: -7311768276317216020, guid: 4221e10ea34667b40a125804a2d2c420, type: 3}
-  gm: {fileID: 2516291170810580179, guid: fb368fd34866f2447a995b12bdae69e6, type: 3}
-  startSpeed: 5
-  speedIncrease: 0.5
-  speedIncreaseFrequency: 5
-  timeBetweenSpawns: 1.5
+  hasStarted: 0

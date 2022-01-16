@@ -5,7 +5,8 @@ using UnityEngine;
 public class SquareSpawner : MonoBehaviour
 {
 	public Square sq;
-
+    public Triangle tri;
+    public GameManager gm;
 	public float startSpeed;
 	public float speedIncrease;
     public float speedIncreaseFrequency;
@@ -41,11 +42,30 @@ public class SquareSpawner : MonoBehaviour
         return returnColor;
     }
 
+    void spawnNewShape(){
+        int randShape = Random.Range(0, 2);
+        // Debug.Log(randShape);
+        switch (randShape){
+            case 0:
+                Square newSquare = Instantiate(sq, gameObject.transform.position, Quaternion.identity);
+                newSquare.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
+                newSquare.GetComponent<SpriteRenderer>().color = getRandomColor();
+                break;
+            case 1:
+                Triangle newTri = Instantiate(tri, gameObject.transform.position, Quaternion.identity);
+                newTri.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
+                newTri.GetComponent<SpriteRenderer>().color = getRandomColor();
+                break;
+        }
+
+    }
+
 	void Update(){
+        if (!gm.hasStarted){
+            return;
+        }
 		if (spawnTimer > timeBetweenSpawns){
-            Square newSquare = Instantiate(sq, gameObject.transform.position, Quaternion.identity);
-            newSquare.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
-            newSquare.GetComponent<SpriteRenderer>().color = getRandomColor();
+            spawnNewShape();
             spawnTimer = 0;
 		}
         else{
