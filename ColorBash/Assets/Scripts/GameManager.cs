@@ -20,5 +20,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         hasStarted = false;
+        SaveData.LoadInfo();
+        SaveData.SaveInfo();
     }
 }

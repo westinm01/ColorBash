@@ -405,6 +405,40 @@ Transform:
   m_Father: {fileID: 1121678060}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &757414294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7170093596859099059, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+  m_PrefabInstance: {fileID: 3362065982442922268}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &757414295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757414294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &951289578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7340397809910748279, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+  m_PrefabInstance: {fileID: 3362065982442922268}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &951289579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951289578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1121678059
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,6 +475,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1201842994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4597174506806092490, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+  m_PrefabInstance: {fileID: 3362065982442922268}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1201842995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201842994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1279341943
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,6 +958,58 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1360353029246829649, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360353029246829649, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360353029246829649, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 951289579}
+    - target: {fileID: 1360353029246829649, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360353029246829649, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UnlockBackGroundStars
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360353029246829649, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIScripts, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360353029246829649, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447277386842007651, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984403303815015411, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570979823595611067, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_Text
+      value: 100 points
+      objectReference: {fileID: 0}
+    - target: {fileID: 3362065981777797475, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3362065981777797475, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3362065981777797475, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -17
+      objectReference: {fileID: 0}
     - target: {fileID: 3362065982321102517, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
       propertyPath: m_Name
       value: Shop
@@ -995,6 +1098,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3362065982694477930, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3362065982694477930, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405478249655228981, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405478249655228981, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405478249655228981, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1201842995}
+    - target: {fileID: 4405478249655228981, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405478249655228981, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UnlockBackGroundBoreal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405478249655228981, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIScripts, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405478249655228981, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982833986577140834, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_Text
+      value: 300 points
+      objectReference: {fileID: 0}
     - target: {fileID: 7980584713264518818, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1006,6 +1149,38 @@ PrefabInstance:
     - target: {fileID: 7980584713264518818, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186225330986249445, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_Text
+      value: 200 points
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568293364439863825, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568293364439863825, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568293364439863825, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 757414295}
+    - target: {fileID: 8568293364439863825, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568293364439863825, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UnlockBackGroundSpace
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568293364439863825, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIScripts, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568293364439863825, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
