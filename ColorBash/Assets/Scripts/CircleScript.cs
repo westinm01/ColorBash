@@ -33,6 +33,16 @@ public class CircleScript : MonoBehaviour
         sp.color = Color.yellow;
     }
 
+    public void setColorMagenta(){
+        Debug.Log("Setting color to magenta");
+        sp.color = Color.magenta;
+    }
+
+    public void setColorWhite(){
+        Debug.Log("Setting color to white");
+        sp.color = Color.white;
+    }
+
     void Update(){
         gameObject.transform.RotateAround(gameObject.transform.position + new Vector3(0.25f, 0, 0), new Vector3(0, 0, 1), -rotationSpeed);
         gameObject.GetComponent<Rigidbody2D>().velocity += new Vector2(0.0001f, 0);
