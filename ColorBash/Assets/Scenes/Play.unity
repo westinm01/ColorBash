@@ -3230,6 +3230,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -172.24854
       objectReference: {fileID: 0}
+    - target: {fileID: 230140353291116983, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: da4edefab56c9974e9a93cc684e7e68e, type: 3}
     - target: {fileID: 1121540866735844576, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -3242,6 +3246,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1473314393969329776, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 21300000, guid: da4edefab56c9974e9a93cc684e7e68e, type: 3}
     - target: {fileID: 1645167067431855048, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.5
@@ -3556,7 +3564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8165858630393319422, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_Text
-      value: Shimmering Stars
+      value: Summer Sky
       objectReference: {fileID: 0}
     - target: {fileID: 8507362998741955333, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4251,6 +4259,10 @@ PrefabInstance:
       propertyPath: cantBuyClip
       value: 
       objectReference: {fileID: 8300000, guid: 6fa920fed5cb2ed45803ca3124fa072f, type: 3}
+    - target: {fileID: 9174593552806095251, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: da4edefab56c9974e9a93cc684e7e68e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d698b5bf22797b4eb1d5f83327c844b, type: 3}
 --- !u!1 &2047018158
