@@ -1573,7 +1573,7 @@ MonoBehaviour:
   backgrounds:
   - {fileID: 21300000, guid: 94f9ddb088ace4d4ba515167edca8fc3, type: 3}
   - {fileID: 21300000, guid: f1dc0a492a81440458d62ce6c4552c1b, type: 3}
-  - {fileID: 21300000, guid: f3639591b405cbf4c965581f83e6defc, type: 3}
+  - {fileID: 21300000, guid: da4edefab56c9974e9a93cc684e7e68e, type: 3}
 --- !u!1 &1060746368
 GameObject:
   m_ObjectHideFlags: 0
