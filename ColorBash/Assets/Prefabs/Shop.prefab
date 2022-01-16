@@ -741,6 +741,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &1027452503647962047
 GameObject:
   m_ObjectHideFlags: 0
@@ -1552,6 +1555,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &3362065981858383393
 GameObject:
   m_ObjectHideFlags: 0
@@ -2249,6 +2255,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &3362065982255463807
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,6 +2304,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3362065982321102518}
+  - component: {fileID: 2258642083397138591}
   m_Layer: 5
   m_Name: Shop
   m_TagString: Untagged
@@ -2325,6 +2335,102 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &2258642083397138591
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362065982321102517}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &3362065982322123318
 GameObject:
   m_ObjectHideFlags: 0
@@ -2601,6 +2707,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &3362065982476821726
 GameObject:
   m_ObjectHideFlags: 0
@@ -3044,6 +3153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &3362065982690613172
 GameObject:
   m_ObjectHideFlags: 0
@@ -3448,6 +3560,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &3362065982774900071
 GameObject:
   m_ObjectHideFlags: 0
@@ -3594,6 +3709,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &3362065982808926958
 GameObject:
   m_ObjectHideFlags: 0
@@ -3740,6 +3858,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &3362065982966067876
 GameObject:
   m_ObjectHideFlags: 0
@@ -4054,6 +4175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &3362065983118638524
 GameObject:
   m_ObjectHideFlags: 0
@@ -4200,6 +4324,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &3362065983140526311
 GameObject:
   m_ObjectHideFlags: 0
@@ -4903,6 +5030,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &3362065983586827509
 GameObject:
   m_ObjectHideFlags: 0
@@ -5362,6 +5492,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &3362065983689632730
 GameObject:
   m_ObjectHideFlags: 0
@@ -5668,6 +5801,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &5936806944557673662
 GameObject:
   m_ObjectHideFlags: 0
@@ -5814,6 +5950,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &6175943790598063744
 GameObject:
   m_ObjectHideFlags: 0
@@ -6432,6 +6571,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &7340397809910748279
 GameObject:
   m_ObjectHideFlags: 0
@@ -6578,6 +6720,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &7452478091389956896
 GameObject:
   m_ObjectHideFlags: 0
@@ -6761,6 +6906,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111f4be0294f6094c9dc73f1d279fd14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantBuyClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  aud: {fileID: 0}
 --- !u!1 &8998109836784329129
 GameObject:
   m_ObjectHideFlags: 0
