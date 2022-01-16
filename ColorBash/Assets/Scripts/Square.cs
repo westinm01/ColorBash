@@ -19,16 +19,14 @@ public class Square : MonoBehaviour
 		Destroy(this.gameObject);
 	}
 
-	protected virtual void OnCollisionEnter2D(Collision2D collision)
-	{
+	protected virtual void OnCollisionEnter2D(Collision2D collision){
 		if (collision.gameObject.tag == "Player"){
             // Debug.Log("Collided with Player");
             if (square.color != circleSprite.color)
 			{
                 isTouching = true;
 			}
-			else
-			{
+			else{
 				takeDamage();
 				ScoreScript.scoreValue += 1; 
 			}
