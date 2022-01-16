@@ -28,8 +28,17 @@ public class Square : MonoBehaviour
 			}
 			else{
 				takeDamage();
-				ScoreScript.scoreValue += 10; 
-			}
+
+                SaveData.LoadInfo();
+                Info.points += 10;
+
+                if (ScoreScript.scoreValue > Info.highScore)
+                {
+                    Info.highScore = ScoreScript.scoreValue;
+                }
+                SaveData.SaveInfo();
+            }
+
 		}
 	}
 
