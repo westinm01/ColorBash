@@ -5,12 +5,18 @@ using UnityEngine;
 public class CircleScript : MonoBehaviour
 {
     public SpriteRenderer sp;
+    public GameManager gm;
     public float rotationSpeed;
+    public float rotationSpeedIncrease;
+    public float rotationSpeedFrequency;
     public Vector2 knockbackDistance;
+    private float rotationTimer;
 
     void Start()
     {
         sp = gameObject.GetComponent<SpriteRenderer>();
+        gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        rotationTimer = 0;
     }
 
     public void setColorRed(){
@@ -33,8 +39,27 @@ public class CircleScript : MonoBehaviour
         sp.color = Color.yellow;
     }
 
+    public void setColorMagenta(){
+        Debug.Log("Setting color to magenta");
+        sp.color = Color.magenta;
+    }
+
+    public void setColorWhite(){
+        Debug.Log("Setting color to white");
+        sp.color = Color.white;
+    }
+
     void Update(){
         gameObject.transform.RotateAround(gameObject.transform.position, new Vector3(0, 0, 1), -rotationSpeed);
+        if (gm.hasStarted){
+            if (rotationTimer > rotationSpeedFrequency){
+                rotationSpeed += rotationSpeedIncrease;
+                rotationTimer = 0;
+            }
+            else{
+                rotationTimer += Time.deltaTime;
+            }
+        }
         // gameObject.GetComponent<Rigidbody2D>().velocity += new Vector2(0.0001f, 0);
         // gameObject.transform.position += new Vector3(0.1f, 0);
     }

@@ -135,4 +135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sp: {fileID: 4307746585501112292}
+  gm: {fileID: 0}
   rotationSpeed: 2.5
+  rotationSpeedIncrease: 0.25
+  rotationSpeedFrequency: 5
+  knockbackDistance: {x: 0, y: 0}
