@@ -11,12 +11,13 @@ public class CircleScript : MonoBehaviour
     public float rotationSpeedFrequency;
     public Vector2 knockbackDistance;
     private float rotationTimer;
-    [HideInInspector] public Sprite[] circles;
+    public Sprite[] circles;
     void Start()
     {
         sp = gameObject.GetComponent<SpriteRenderer>();
         gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
         rotationTimer = 0;
+        SaveData.LoadInfo();
 
         Debug.Log(Info.circle);
         sp.sprite = circles[Info.circle];
@@ -55,7 +56,6 @@ public class CircleScript : MonoBehaviour
 
     protected virtual void OnCollisionEnter2D(Collision2D collision){
         if ( collision.gameObject.tag == "Player"){
-            explosion.GetComponent<ParticleSystem>().Play();
         }
     }
     void Update(){

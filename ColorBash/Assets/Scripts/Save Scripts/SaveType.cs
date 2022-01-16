@@ -9,7 +9,8 @@ public class SaveType
     public int highScore;
     public bool[] circles = { true, false, false, false, false, false, false, false, false, false, false, false };
     public bool[] backgrounds = {true, false, false };
-    public int circle, background;
+    public int circle; 
+    public int background;
 
     public SaveType(int points_, bool[] circles_, bool[] backgrounds_, int highScore_, int circle_, int background_)
     {

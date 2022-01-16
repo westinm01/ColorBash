@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Background : MonoBehaviour
 {
-    [HideInInspector] public Sprite[] backgrounds;
+    public Sprite[] backgrounds;
     void Start()
     {
         GetComponent<SpriteRenderer>().sprite = backgrounds[Info.background];
