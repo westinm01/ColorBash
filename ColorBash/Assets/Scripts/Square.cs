@@ -27,8 +27,6 @@ public class Square : MonoBehaviour
                 isTouching = true;
 			}
 			else{
-				takeDamage();
-
                 SaveData.LoadInfo();
                 Info.points += 10;
 
@@ -37,6 +35,8 @@ public class Square : MonoBehaviour
                     Info.highScore = ScoreScript.scoreValue;
                 }
                 SaveData.SaveInfo();
+
+				takeDamage();
             }
 
 		}
@@ -46,6 +46,15 @@ public class Square : MonoBehaviour
         if (isTouching){
             // Debug.Log("IsTouching");
             if (square.color == circleSprite.color ){
+                SaveData.LoadInfo();
+                Info.points += 10;
+
+                if (ScoreScript.scoreValue > Info.highScore)
+                {
+                    Info.highScore = ScoreScript.scoreValue;
+                }
+                SaveData.SaveInfo();
+
                 takeDamage();
             }
         }

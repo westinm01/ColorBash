@@ -32,6 +32,14 @@ public class Triangle : Square
             // Debug.Log("IsTouching");
             if (square.color != circleSprite.color ){
                 takeDamage();
+                SaveData.LoadInfo();
+                Info.points += 10;
+
+                if (ScoreScript.scoreValue > Info.highScore)
+                {
+                    Info.highScore = ScoreScript.scoreValue;
+                }
+                SaveData.SaveInfo();
             }
         }
     }
