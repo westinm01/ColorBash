@@ -11,12 +11,16 @@ public class CircleScript : MonoBehaviour
     public float rotationSpeedFrequency;
     public Vector2 knockbackDistance;
     private float rotationTimer;
-    public ParticleSystem explosion;
+    [HideInInspector] public Sprite[] circles;
     void Start()
     {
         sp = gameObject.GetComponent<SpriteRenderer>();
         gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
         rotationTimer = 0;
+
+        Debug.Log(Info.circle);
+        sp.sprite = circles[Info.circle];
+        
     }
 
     public void setColorRed(){
