@@ -8,6 +8,8 @@ public class SquareSpawner : MonoBehaviour
     public Triangle tri;
     public GameManager gm;
 
+    public int rotation;
+
     [Header("Speed variables")]
 	public float startSpeed;
     public float maxSpeed;
@@ -146,11 +148,13 @@ public class SquareSpawner : MonoBehaviour
                 Square newSquare = Instantiate(sq, gameObject.transform.position, Quaternion.identity);
                 newSquare.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
                 newSquare.GetComponent<SpriteRenderer>().color = getRandomColor();
+                newSquare.gameObject.transform.RotateAround(newSquare.gameObject.transform.position, new Vector3(0, 0, 1), rotation);
                 break;
             case 1:
                 Triangle newTri = Instantiate(tri, gameObject.transform.position, Quaternion.identity);
                 newTri.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
                 newTri.GetComponent<SpriteRenderer>().color = getRandomColor();
+                newTri.gameObject.transform.RotateAround(newTri.gameObject.transform.position, new Vector3(0, 0, 1), rotation);
                 break;
         }
 

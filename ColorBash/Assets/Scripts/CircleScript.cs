@@ -9,6 +9,9 @@ public class CircleScript : MonoBehaviour
     public float rotationSpeed;
     public float rotationSpeedIncrease;
     public float rotationSpeedFrequency;
+    public int flipScore;
+    public float minY;
+    public float maxY;
     public Vector2 knockbackDistance;
     private float rotationTimer;
     public Sprite[] circles;
@@ -22,6 +25,11 @@ public class CircleScript : MonoBehaviour
         Debug.Log(Info.circle);
         sp.sprite = circles[Info.circle];
         
+    }
+
+    void flip(){
+        gameObject.GetComponent<Rigidbody2D>().gravityScale *= -1;
+        rotationSpeed *= -1;
     }
 
     public void setColorRed(){
@@ -54,12 +62,11 @@ public class CircleScript : MonoBehaviour
         sp.color = Color.white;
     }
 
-    protected virtual void OnCollisionEnter2D(Collision2D collision){
-        if ( collision.gameObject.tag == "Player"){
-        }
-    }
     void Update(){
         gameObject.transform.RotateAround(gameObject.transform.position, new Vector3(0, 0, 1), -rotationSpeed);
+        if (Input.GetKeyDown("space") && ScoreScript.scoreValue >= flipScore && (gameObject.transform.position.y <= minY || gameObject.transform.position.y >= maxY)){
+            flip();
+        }
         if (gm.hasStarted){
             if (rotationTimer > rotationSpeedFrequency){
                 rotationSpeed += rotationSpeedIncrease;

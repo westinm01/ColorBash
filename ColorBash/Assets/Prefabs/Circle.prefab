@@ -139,5 +139,8 @@ MonoBehaviour:
   rotationSpeed: 2.5
   rotationSpeedIncrease: 0.25
   rotationSpeedFrequency: 5
+  flipScore: 0
+  minY: -2
+  maxY: 4
   knockbackDistance: {x: 0, y: 0}
-  explosion: {fileID: 1538658660534414159, guid: 94427806ab058c046b1baf90f96d4486, type: 3}
+  circles: []
