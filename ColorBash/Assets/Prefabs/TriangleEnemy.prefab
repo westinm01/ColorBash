@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 2696341599576091444}
   - component: {fileID: 3532676673087760465}
   - component: {fileID: -406489477284261988}
-  - component: {fileID: 3210484509604049942}
   - component: {fileID: 6988493518543077662}
+  - component: {fileID: -7311768276317216020}
   - component: {fileID: 5761717162365453925}
   m_Layer: 0
-  m_Name: SquareEnemy
+  m_Name: TriangleEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: eafb1b145ba25fa4bb257c5482d7eece, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1707458b3cf4d204c9bff71744c7fa49, type: 3}
   m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -112,20 +112,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4387125, y: 1.4836156}
   m_EdgeRadius: 0
---- !u!114 &3210484509604049942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4311390442734216736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19b91de1f614b924da8757f5c6993e49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sq: {fileID: 3532676673087760465}
-  sp: {fileID: 4307746585501112292, guid: 47f0c7e0a97cfea4a920188d2e230651, type: 3}
 --- !u!114 &6988493518543077662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,6 +125,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   squareSpeed: 5
+--- !u!114 &-7311768276317216020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4311390442734216736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2857fd59872219b43b0739b7e84a3f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &5761717162365453925
 Rigidbody2D:
   serializedVersion: 4
