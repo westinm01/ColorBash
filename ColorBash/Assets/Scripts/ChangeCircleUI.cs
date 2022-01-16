@@ -99,4 +99,28 @@ public class ChangeCircleUI : MonoBehaviour
             GameObject.Find("Circle").GetComponent<SpriteRenderer>().sprite = sprite;
         }
     }
+
+    public void ChangeToBackgroundSpace(Sprite sprite)
+    {
+        if (Info.backgrounds[0] == true)
+        {
+            GameObject.Find("Background").GetComponent<SpriteRenderer>().sprite = sprite;
+        }
+    }
+
+    public void ChangeToBackgroundStars(Sprite sprite)
+    {
+        if (Info.backgrounds[1] == true)
+        {
+            GameObject.Find("Background").GetComponent<SpriteRenderer>().sprite = sprite;
+        }
+    }
+
+    public void ChangeToBackgroundBoreal(Sprite sprite)
+    {
+        if (Info.backgrounds[2] == true)
+        {
+            GameObject.Find("Background").GetComponent<SpriteRenderer>().sprite = sprite;
+        }
+    }
 }

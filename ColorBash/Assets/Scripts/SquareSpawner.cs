@@ -7,9 +7,13 @@ public class SquareSpawner : MonoBehaviour
 	public Square sq;
     public Triangle tri;
     public GameManager gm;
+
+    [Header("Speed variables")]
 	public float startSpeed;
+    public float maxSpeed;
 	public float speedIncrease;
     public float speedIncreaseFrequency;
+    [Header("Spawn variables")]
 	public int timeBetweenSpawns;
     public float spawnIncreaseRate;
     public float spawnIncreaseFrequency;
@@ -170,16 +174,24 @@ public class SquareSpawner : MonoBehaviour
             Debug.Log("Speed up spawn");
             if (baseSpawnTimer < maxSpawnIncrease + spawnIncreaseRate){
                 baseSpawnTimer += spawnIncreaseRate;
+                spawnIncreaseTimer = 0;
             }
-            spawnIncreaseTimer = 0;
+            else{
+                Debug.Log("Max spawn rate reached");
+            }
         }
         else{
             spawnIncreaseTimer+= Time.deltaTime;
         }
 
         if (speedTimer > speedIncreaseFrequency){
-            numIncreases++;
-            speedTimer = 0;
+            if (speedIncrease * numIncreases < maxSpeed){
+                numIncreases++;
+                speedTimer = 0;
+            }
+            else{
+                Debug.Log("Max speed reached");
+            }
         }
         else{
             speedTimer += Time.deltaTime;
