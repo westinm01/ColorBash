@@ -7,18 +7,23 @@ public class GameManager : MonoBehaviour
 {
     public bool hasStarted;
     public GameObject GameOverScreen;
+    public GameObject newHighScoreScreen;
     public AudioSource bgm;
     public bool newHighScore;
     public AudioClip HighScoreSound;
+    public int oldHighScore;
 
     public void StartGame(){
         hasStarted = true;
+        SaveData.LoadInfo();
+        oldHighScore = Info.highScore;
     }
 
     public void GameOver(){
         Debug.Log("Game Over");
         GameOverScreen.SetActive(true);
         if (newHighScore){
+            newHighScoreScreen.SetActive(true);
             AudioSource.PlayClipAtPoint(HighScoreSound, new Vector3(0, 0, 0));
         }
         hasStarted = false;
