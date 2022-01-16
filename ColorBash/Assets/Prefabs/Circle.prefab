@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4307746585501112282}
   - component: {fileID: 9106548869783402156}
   - component: {fileID: -7896807404302845571}
+  - component: {fileID: 4560719697735155556}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Player
@@ -144,3 +145,17 @@ MonoBehaviour:
   maxY: 4
   knockbackDistance: {x: 0, y: 0}
   circles: []
+--- !u!114 &4560719697735155556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4307746585501112293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d45a022045d884481947843547d6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxX: -2.5
+  speedIncrease: 0.001
