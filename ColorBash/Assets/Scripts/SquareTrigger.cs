@@ -11,13 +11,13 @@ public class SquareTrigger : MonoBehaviour
 		square = gameObject.GetComponentInParent<SpriteRenderer>();
 	}
     protected virtual void takeDamage(){
-		Destroy(this.gameObject);
+		Destroy(transform.parent.gameObject);
 	}
 
 	protected virtual void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.gameObject.tag == "Player"){
-            Debug.Log("Collided with Player");
+            Debug.Log("Trigger with Player");
 			if ( square.color != collision.gameObject.GetComponent<SpriteRenderer>().color )
 			{
 				Debug.Log("Game Over");

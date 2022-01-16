@@ -6,7 +6,7 @@ public class TriangleTrigger : SquareTrigger
 {
     protected override void OnTriggerEnter2D(Collider2D collision){
 		if (collision.gameObject.tag == "Player"){
-            Debug.Log("Collided with Player");
+            Debug.Log("Trigger with Player");
             if (collision.gameObject.GetComponent<SpriteRenderer>().color != square.color){
                 ScoreScript.scoreValue += 1; 
                 takeDamage();
