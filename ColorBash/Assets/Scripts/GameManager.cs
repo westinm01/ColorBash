@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public bool hasStarted;
+    public GameObject spawner;
     public GameObject reverseSpawner;
     public GameObject GameOverScreen;
     public GameObject newHighScoreScreen;
@@ -49,6 +50,7 @@ public class GameManager : MonoBehaviour
 
     public void EnableFlip(){
         reverseSpawner.GetComponent<SquareSpawner>().canSpawn = true;
+        spawner.GetComponent<SquareSpawner>().maxShapes = 3;
     }
 
     // Start is called before the first frame update

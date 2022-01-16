@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GravityPlay.unity
-    guid: 9ecbf95d4cc47844ab7dcdcd944100ea
-  - enabled: 1
     path: Assets/Scenes/Play.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/GravityPlay.unity
+    guid: 9ecbf95d4cc47844ab7dcdcd944100ea
   m_configObjects: {}

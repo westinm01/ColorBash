@@ -1053,22 +1053,6 @@ PrefabInstance:
       propertyPath: canSpawn
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8493839628881837149, guid: 733ca7699839c524caa24424bca11bc9, type: 3}
-      propertyPath: speedIncrease
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8493839628881837149, guid: 733ca7699839c524caa24424bca11bc9, type: 3}
-      propertyPath: spawnIncreaseRate
-      value: 0.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 8493839628881837149, guid: 733ca7699839c524caa24424bca11bc9, type: 3}
-      propertyPath: spawnIncreaseFrequency
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8493839628881837149, guid: 733ca7699839c524caa24424bca11bc9, type: 3}
-      propertyPath: speedIncreaseFrequency
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 733ca7699839c524caa24424bca11bc9, type: 3}
 --- !u!224 &654893534 stripped
@@ -2057,6 +2041,10 @@ PrefabInstance:
       propertyPath: bgm
       value: 
       objectReference: {fileID: 1221804061}
+    - target: {fileID: 2516291170810580179, guid: fb368fd34866f2447a995b12bdae69e6, type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 1540240131}
     - target: {fileID: 2516291170810580179, guid: fb368fd34866f2447a995b12bdae69e6, type: 3}
       propertyPath: GameOverScreen
       value: 
@@ -3051,6 +3039,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538946323}
   m_CullTransparentMesh: 1
+--- !u!1 &1540240131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3229378450361194506, guid: 733ca7699839c524caa24424bca11bc9, type: 3}
+  m_PrefabInstance: {fileID: 638535732}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1579493267
 GameObject:
   m_ObjectHideFlags: 0
@@ -3196,6 +3189,10 @@ PrefabInstance:
     - target: {fileID: 8493839628881837149, guid: 733ca7699839c524caa24424bca11bc9, type: 3}
       propertyPath: rotation
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493839628881837149, guid: 733ca7699839c524caa24424bca11bc9, type: 3}
+      propertyPath: maxShapes
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 733ca7699839c524caa24424bca11bc9, type: 3}
