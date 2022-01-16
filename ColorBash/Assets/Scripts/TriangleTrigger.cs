@@ -12,7 +12,7 @@ public class TriangleTrigger : SquareTrigger
                 takeDamage();
             }
             else{
-                Debug.Log("Game over");
+                // Debug.Log("Game over");
             }
 		}
 	}

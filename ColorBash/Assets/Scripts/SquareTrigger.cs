@@ -20,7 +20,7 @@ public class SquareTrigger : MonoBehaviour
             Debug.Log("Trigger with Player");
 			if ( square.color != collision.gameObject.GetComponent<SpriteRenderer>().color )
 			{
-				Debug.Log("Game Over");
+				// Debug.Log("Game Over");
 			}
 			else
 			{
