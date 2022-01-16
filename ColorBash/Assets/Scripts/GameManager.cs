@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject GameOverScreen;
     public AudioSource bgm;
     public bool newHighScore;
+    public AudioClip HighScoreSound;
 
     public void StartGame(){
         hasStarted = true;
@@ -17,6 +18,9 @@ public class GameManager : MonoBehaviour
     public void GameOver(){
         Debug.Log("Game Over");
         GameOverScreen.SetActive(true);
+        if (newHighScore){
+            AudioSource.PlayClipAtPoint(HighScoreSound, new Vector3(0, 0, 0));
+        }
         hasStarted = false;
         Time.timeScale = 0;
         bgm.Pause();

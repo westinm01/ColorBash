@@ -44,3 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasStarted: 0
+  GameOverScreen: {fileID: 0}
+  bgm: {fileID: 0}
+  newHighScore: 0
+  HighScoreSound: {fileID: 8300000, guid: 349ffd286f4c84c41b438786c270c51c, type: 3}

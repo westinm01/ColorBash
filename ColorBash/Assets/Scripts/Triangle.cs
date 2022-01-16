@@ -14,6 +14,7 @@ public class Triangle : Square
 
                 if (ScoreScript.scoreValue > Info.highScore)
                 {
+                    gm.newHighScore = true;
                     Info.highScore = ScoreScript.scoreValue;
                 }
                 SaveData.SaveInfo();

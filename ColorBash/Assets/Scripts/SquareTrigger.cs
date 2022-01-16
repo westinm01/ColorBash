@@ -7,10 +7,11 @@ public class SquareTrigger : MonoBehaviour
     public SpriteRenderer square;
 	public ParticleSystem explosion;
 	public AudioClip deathClip;
-	private GameManager gm;
+	protected GameManager gm;
 	void Start()
 	{
 		square = gameObject.GetComponentInParent<SpriteRenderer>();
+		gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
 	}
 
 	protected virtual void playDeathNoise(){
@@ -49,7 +50,7 @@ public class SquareTrigger : MonoBehaviour
 				Info.points += 10;
 				if (ScoreScript.scoreValue > Info.highScore)
 				{
-					
+					gm.newHighScore = true;
 					Info.highScore = ScoreScript.scoreValue;
 				}
 				SaveData.SaveInfo();
