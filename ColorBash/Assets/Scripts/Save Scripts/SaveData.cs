@@ -40,6 +40,7 @@ public class SaveData : MonoBehaviour
             Info.backgrounds = data.backgrounds;
             Info.circle = data.circle;
             Info.background = data.background;
+            Info.highScore = data.highScore;
 
             return data;
         }
