@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public bool hasStarted;
+    public GameObject reverseSpawner;
     public GameObject GameOverScreen;
     public GameObject newHighScoreScreen;
     public AudioSource bgm;
@@ -17,6 +18,9 @@ public class GameManager : MonoBehaviour
         hasStarted = true;
         SaveData.LoadInfo();
         oldHighScore = Info.highScore;
+        ColorBoard.changeColorBoard();
+        // reverseSpawner.GetComponent<SquareSpawner>().canSpawn = false;
+
     }
 
     public void GameOver(){
@@ -27,6 +31,7 @@ public class GameManager : MonoBehaviour
             newHighScoreScreen.SetActive(true);
             AudioSource.PlayClipAtPoint(HighScoreSound, new Vector3(0, 0, 0));
         }
+        reverseSpawner.GetComponent<SquareSpawner>().canSpawn = false;
         hasStarted = false;
         Time.timeScale = 0;
         bgm.Pause();
@@ -42,11 +47,16 @@ public class GameManager : MonoBehaviour
         // StartGame();
     }
 
+    public void EnableFlip(){
+        reverseSpawner.GetComponent<SquareSpawner>().canSpawn = true;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         hasStarted = false;
         newHighScore = false;
+        ScoreScript.scoreValue = 0;
         SaveData.LoadInfo();
         SaveData.SaveInfo();
     }

@@ -139,7 +139,7 @@ MonoBehaviour:
   rotationSpeed: 2.5
   rotationSpeedIncrease: 0.25
   rotationSpeedFrequency: 5
-  flipScore: 0
+  flipScore: 500
   minY: -2
   maxY: 4
   knockbackDistance: {x: 0, y: 0}

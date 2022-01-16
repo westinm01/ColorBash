@@ -31,7 +31,6 @@ public class CircleScript : MonoBehaviour
         gameObject.GetComponent<Rigidbody2D>().gravityScale *= -1;
         rotationSpeed *= -1;
     }
-
     public void setColorRed(){
         Debug.Log("Setting color to red");
         sp.color = Color.red;
@@ -64,8 +63,12 @@ public class CircleScript : MonoBehaviour
 
     void Update(){
         gameObject.transform.RotateAround(gameObject.transform.position, new Vector3(0, 0, 1), -rotationSpeed);
-        if (Input.GetKeyDown("space") && ScoreScript.scoreValue >= flipScore && (gameObject.transform.position.y <= minY || gameObject.transform.position.y >= maxY)){
-            flip();
+        if (ScoreScript.scoreValue >= flipScore){
+            Debug.Log(ScoreScript.scoreValue);
+            if (Input.GetKeyDown("space") && (gameObject.transform.position.y <= minY || gameObject.transform.position.y >= maxY)){
+                flip();
+            }
+            gm.EnableFlip();
         }
         if (gm.hasStarted){
             if (rotationTimer > rotationSpeedFrequency){

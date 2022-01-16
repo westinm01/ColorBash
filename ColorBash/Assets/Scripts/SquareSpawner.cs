@@ -10,6 +10,8 @@ public class SquareSpawner : MonoBehaviour
 
     public int rotation;
 
+    public bool canSpawn;
+
     [Header("Speed variables")]
 	public float startSpeed;
     public float maxSpeed;
@@ -141,6 +143,9 @@ public class SquareSpawner : MonoBehaviour
         }
     }
     void spawnNewShape(){
+        if (!canSpawn){
+            return;
+        }
         int randShape = Random.Range(0, 2);
         // Debug.Log(randShape);
         switch (randShape){

@@ -46,11 +46,13 @@ MonoBehaviour:
   sq: {fileID: 3210484509604049942, guid: 6ba3c50806f8533439f749c6ef3f46b0, type: 3}
   tri: {fileID: -7311768276317216020, guid: 4221e10ea34667b40a125804a2d2c420, type: 3}
   gm: {fileID: 2516291170810580179, guid: fb368fd34866f2447a995b12bdae69e6, type: 3}
+  rotation: 0
+  canSpawn: 0
   startSpeed: 5
   maxSpeed: 15
-  speedIncrease: 0.5
-  speedIncreaseFrequency: 5
+  speedIncrease: 0.4
+  speedIncreaseFrequency: 6
   timeBetweenSpawns: 2
-  spawnIncreaseRate: 0.25
-  spawnIncreaseFrequency: 10
+  spawnIncreaseRate: 0.13
+  spawnIncreaseFrequency: 5
   maxSpawnIncrease: 1
