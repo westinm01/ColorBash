@@ -9,6 +9,7 @@ public class Square : MonoBehaviour
 
     protected SpriteRenderer circleSprite;
 	public ParticleSystem explosion;
+    public AudioClip deathClip;
 
 	void Start()
 	{
@@ -20,6 +21,11 @@ public class Square : MonoBehaviour
 		Destroy(this.gameObject);
 	}
 
+    protected virtual void playDeathNoise(){
+		Debug.Log("Playing death noise");
+		AudioSource.PlayClipAtPoint(deathClip, gameObject.transform.position);
+	}
+
 	protected virtual void OnCollisionEnter2D(Collision2D collision){
 		if (collision.gameObject.tag == "Player"){
             // Debug.Log("Collided with Player");
@@ -28,6 +34,7 @@ public class Square : MonoBehaviour
                 isTouching = true;
 			}
 			else{
+                playDeathNoise();
                 SaveData.LoadInfo();
                 Info.points += 10;
                 if (ScoreScript.scoreValue > Info.highScore)

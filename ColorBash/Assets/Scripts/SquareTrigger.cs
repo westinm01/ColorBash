@@ -6,12 +6,10 @@ public class SquareTrigger : MonoBehaviour
 {
     public SpriteRenderer square;
 	public ParticleSystem explosion;
-	public AudioSource aud;
-	public AudioClip c;
+	public AudioClip deathClip;
 	void Start()
 	{
 		square = gameObject.GetComponentInParent<SpriteRenderer>();
-		aud = gameObject.GetComponentInParent<AudioSource>();
 	}
     protected virtual void takeDamage(){
 		// transform.parent.gameObject.SetActive(false);
@@ -20,8 +18,7 @@ public class SquareTrigger : MonoBehaviour
 
 	protected virtual void playDeathNoise(){
 		Debug.Log("Playing death noise");
-		aud.clip = c;
-		AudioSource.PlayClipAtPoint(c, gameObject.transform.position);
+		AudioSource.PlayClipAtPoint(deathClip, gameObject.transform.position);
 	}
 
 	protected virtual void OnTriggerEnter2D(Collider2D collision)
