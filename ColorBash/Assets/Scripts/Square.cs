@@ -28,6 +28,7 @@ public class Square : MonoBehaviour
 			}
 			else{
 				takeDamage();
+
                 SaveData.LoadInfo();
                 Info.points += 10;
 
@@ -37,6 +38,7 @@ public class Square : MonoBehaviour
                 }
                 SaveData.SaveInfo();
             }
+
 		}
 	}
 

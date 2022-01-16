@@ -8,6 +8,7 @@ public class Triangle : Square
 		if (collision.gameObject.tag == "Player"){
             Debug.Log("Collided with Player");
             if (collision.gameObject.GetComponent<SpriteRenderer>().color != this.gameObject.GetComponent<SpriteRenderer>().color){
+
                 ScoreScript.scoreValue += 10;
                 SaveData.LoadInfo();
                 Info.points += 10;
@@ -17,6 +18,7 @@ public class Triangle : Square
                     Info.highScore = ScoreScript.scoreValue;
                 }
                 SaveData.SaveInfo();
+
                 takeDamage();
             }
             else{
