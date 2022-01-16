@@ -8,7 +8,10 @@ public class ChangeCircleUI : MonoBehaviour
     {
         if(Info.circles[0] == true)
         {
+            SaveData.LoadInfo();
             GameObject.Find("Circle").GetComponent<SpriteRenderer>().sprite = sprite;
+            Info.circle = 0;
+            SaveData.SaveInfo();
         }
     }
 
@@ -16,7 +19,10 @@ public class ChangeCircleUI : MonoBehaviour
     {
         if (Info.circles[1] == true)
         {
+            SaveData.LoadInfo();
             GameObject.Find("Circle").GetComponent<SpriteRenderer>().sprite = sprite;
+            Info.circle = 1;
+            SaveData.SaveInfo();
         }
     }
 
@@ -24,7 +30,10 @@ public class ChangeCircleUI : MonoBehaviour
     {
         if (Info.circles[2] == true)
         {
+            SaveData.LoadInfo();
             GameObject.Find("Circle").GetComponent<SpriteRenderer>().sprite = sprite;
+            Info.circle = 2;
+            SaveData.SaveInfo();
         }
     }
 
@@ -32,7 +41,10 @@ public class ChangeCircleUI : MonoBehaviour
     {
         if (Info.circles[3] == true)
         {
+            SaveData.LoadInfo();
             GameObject.Find("Circle").GetComponent<SpriteRenderer>().sprite = sprite;
+            Info.circle = 3;
+            SaveData.SaveInfo();
         }
     }
 
@@ -40,7 +52,10 @@ public class ChangeCircleUI : MonoBehaviour
     {
         if (Info.circles[4] == true)
         {
+            SaveData.LoadInfo();
             GameObject.Find("Circle").GetComponent<SpriteRenderer>().sprite = sprite;
+            Info.circle = 4;
+            SaveData.SaveInfo();
         }
     }
 
@@ -48,7 +63,10 @@ public class ChangeCircleUI : MonoBehaviour
     {
         if (Info.circles[5] == true)
         {
+            SaveData.LoadInfo();
             GameObject.Find("Circle").GetComponent<SpriteRenderer>().sprite = sprite;
+            Info.circle = 5;
+            SaveData.SaveInfo();
         }
     }
 
@@ -56,7 +74,10 @@ public class ChangeCircleUI : MonoBehaviour
     {
         if (Info.circles[6] == true)
         {
+            SaveData.LoadInfo();
             GameObject.Find("Circle").GetComponent<SpriteRenderer>().sprite = sprite;
+            Info.circle = 6;
+            SaveData.SaveInfo();
         }
     }
 
@@ -64,7 +85,10 @@ public class ChangeCircleUI : MonoBehaviour
     {
         if (Info.circles[7] == true)
         {
+            SaveData.LoadInfo();
             GameObject.Find("Circle").GetComponent<SpriteRenderer>().sprite = sprite;
+            Info.circle = 7;
+            SaveData.SaveInfo();
         }
     }
 
@@ -72,7 +96,10 @@ public class ChangeCircleUI : MonoBehaviour
     {
         if (Info.circles[8] == true)
         {
+            SaveData.LoadInfo();
             GameObject.Find("Circle").GetComponent<SpriteRenderer>().sprite = sprite;
+            Info.circle = 8;
+            SaveData.SaveInfo();
         }
     }
 
@@ -80,7 +107,10 @@ public class ChangeCircleUI : MonoBehaviour
     {
         if (Info.circles[9] == true)
         {
+            SaveData.LoadInfo();
             GameObject.Find("Circle").GetComponent<SpriteRenderer>().sprite = sprite;
+            Info.circle = 9;
+            SaveData.SaveInfo();
         }
     }
 
@@ -88,7 +118,10 @@ public class ChangeCircleUI : MonoBehaviour
     {
         if (Info.circles[10] == true)
         {
+            SaveData.LoadInfo();
             GameObject.Find("Circle").GetComponent<SpriteRenderer>().sprite = sprite;
+            Info.circle = 10;
+            SaveData.SaveInfo();
         }
     }
 
@@ -96,7 +129,10 @@ public class ChangeCircleUI : MonoBehaviour
     {
         if (Info.circles[11] == true)
         {
+            SaveData.LoadInfo();
             GameObject.Find("Circle").GetComponent<SpriteRenderer>().sprite = sprite;
+            Info.circle = 11;
+            SaveData.SaveInfo();
         }
     }
 
@@ -104,7 +140,10 @@ public class ChangeCircleUI : MonoBehaviour
     {
         if (Info.backgrounds[0] == true)
         {
+            SaveData.LoadInfo();
             GameObject.Find("Background").GetComponent<SpriteRenderer>().sprite = sprite;
+            Info.background = 0;
+            SaveData.SaveInfo();
         }
     }
 
@@ -112,7 +151,10 @@ public class ChangeCircleUI : MonoBehaviour
     {
         if (Info.backgrounds[1] == true)
         {
+            SaveData.LoadInfo();
             GameObject.Find("Background").GetComponent<SpriteRenderer>().sprite = sprite;
+            Info.background = 1;
+            SaveData.SaveInfo();
         }
     }
 
@@ -120,7 +162,10 @@ public class ChangeCircleUI : MonoBehaviour
     {
         if (Info.backgrounds[2] == true)
         {
+            SaveData.LoadInfo();
             GameObject.Find("Background").GetComponent<SpriteRenderer>().sprite = sprite;
+            Info.background = 2;
+            SaveData.SaveInfo();
         }
     }
 }

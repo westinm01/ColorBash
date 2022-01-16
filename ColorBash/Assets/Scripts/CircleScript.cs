@@ -11,12 +11,17 @@ public class CircleScript : MonoBehaviour
     public float rotationSpeedFrequency;
     public Vector2 knockbackDistance;
     private float rotationTimer;
-
+    public Sprite[] circles;
     void Start()
     {
         sp = gameObject.GetComponent<SpriteRenderer>();
         gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
         rotationTimer = 0;
+        SaveData.LoadInfo();
+
+        Debug.Log(Info.circle);
+        sp.sprite = circles[Info.circle];
+        
     }
 
     public void setColorRed(){
@@ -49,6 +54,10 @@ public class CircleScript : MonoBehaviour
         sp.color = Color.white;
     }
 
+    protected virtual void OnCollisionEnter2D(Collision2D collision){
+        if ( collision.gameObject.tag == "Player"){
+        }
+    }
     void Update(){
         gameObject.transform.RotateAround(gameObject.transform.position, new Vector3(0, 0, 1), -rotationSpeed);
         if (gm.hasStarted){

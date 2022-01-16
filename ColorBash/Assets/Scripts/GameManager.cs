@@ -19,15 +19,14 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
     }
 
-    public void Exit(){
-        Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    public void QuitGame(){
+        Application.Quit();
     }
 
-    public void Restart(){
+    public void ExitToMenu(){
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        StartGame();
+        // StartGame();
     }
 
     // Start is called before the first frame update
