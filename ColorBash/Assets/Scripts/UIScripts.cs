@@ -4,6 +4,26 @@ using UnityEngine;
 
 public class UIScripts : MonoBehaviour
 {
+    public AudioClip cantBuyClip;
+    public AudioClip buyClip;
+    public AudioSource aud;
+
+    private Vector3 playPoint = Vector3.zero;
+
+    void Start(){
+        aud = gameObject.GetComponentInParent<AudioSource>();
+    }
+
+    void PlayCantBuyClip(){
+        aud.clip = cantBuyClip;
+        aud.Play();
+    }
+
+    void PlayBuyClip(){
+        aud.clip = buyClip;
+        aud.Play();
+    }
+
     public void ChangeToCircleShop()
     {
         GameObject.Find("ShopMenu").transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
@@ -30,13 +50,16 @@ public class UIScripts : MonoBehaviour
         if (Info.circles[1] == true)
         {
             Debug.Log("Already own");
+            PlayCantBuyClip();
             return;
         }
         if (Info.points < 100)
         {
             Debug.Log("Not enough points");
+            PlayCantBuyClip();
             return;
         }
+        PlayBuyClip();
         Info.circles[1] = true;
         Info.points -= 100;
         SaveData.SaveInfo();
@@ -48,13 +71,16 @@ public class UIScripts : MonoBehaviour
         if (Info.circles[2] == true)
         {
             Debug.Log("Already own");
+            PlayCantBuyClip();
             return;
         }
         if (Info.points < 150)
         {
             Debug.Log("Not enough points");
+            PlayCantBuyClip();
             return;
         }
+        PlayBuyClip();
         Info.circles[2] = true;
         Info.points -= 150;
         SaveData.SaveInfo();
@@ -66,13 +92,16 @@ public class UIScripts : MonoBehaviour
         if (Info.circles[3] == true)
         {
             Debug.Log("Already own");
+            PlayCantBuyClip();
             return;
         }
         if (Info.points < 200)
         {
             Debug.Log("Not enough points");
+            PlayCantBuyClip();
             return;
         }
+        PlayBuyClip();
         Info.circles[3] = true;
         Info.points -= 200;
         SaveData.SaveInfo();
@@ -84,13 +113,16 @@ public class UIScripts : MonoBehaviour
         if (Info.circles[4] == true)
         {
             Debug.Log("Already own");
+            PlayCantBuyClip();
             return;
         }
         if (Info.points < 500)
         {
             Debug.Log("Not enough points");
+            PlayCantBuyClip();
             return;
         }
+        PlayBuyClip();
         Info.circles[4] = true;
         Info.points -= 500;
         SaveData.SaveInfo();
@@ -102,13 +134,16 @@ public class UIScripts : MonoBehaviour
         if (Info.circles[5] == true)
         {
             Debug.Log("Already own");
+            PlayCantBuyClip();
             return;
         }
         if (Info.points < 600)
         {
             Debug.Log("Not enough points");
+            PlayCantBuyClip();
             return;
         }
+        PlayBuyClip();
         Info.circles[5] = true;
         Info.points -= 600;
         SaveData.SaveInfo();
@@ -120,13 +155,16 @@ public class UIScripts : MonoBehaviour
         if (Info.circles[6] == true)
         {
             Debug.Log("Already own");
+            PlayCantBuyClip();
             return;
         }
         if (Info.points < 800)
         {
             Debug.Log("Not enough points");
+            PlayCantBuyClip();
             return;
         }
+        PlayBuyClip();
         Info.circles[6] = true;
         Info.points -= 800;
         SaveData.SaveInfo();
@@ -138,13 +176,16 @@ public class UIScripts : MonoBehaviour
         if (Info.circles[7] == true)
         {
             Debug.Log("Already own");
+            PlayCantBuyClip();
             return;
         }
         if (Info.points < 1100)
         {
             Debug.Log("Not enough points");
+            PlayCantBuyClip();
             return;
         }
+        PlayBuyClip();
         Info.circles[7] = true;
         Info.points -= 1100;
         SaveData.SaveInfo();
@@ -156,13 +197,16 @@ public class UIScripts : MonoBehaviour
         if (Info.circles[8] == true)
         {
             Debug.Log("Already own");
+            PlayCantBuyClip();
             return;
         }
         if (Info.points < 1500)
         {
             Debug.Log("Not enough points");
+            PlayCantBuyClip();
             return;
         }
+        PlayBuyClip();
         Info.circles[8] = true;
         Info.points -= 1500;
         SaveData.SaveInfo();
@@ -174,13 +218,16 @@ public class UIScripts : MonoBehaviour
         if (Info.circles[9] == true)
         {
             Debug.Log("Already own");
+            PlayCantBuyClip();
             return;
         }
         if (Info.points < 2000)
         {
             Debug.Log("Not enough points");
+            PlayCantBuyClip();
             return;
         }
+        PlayBuyClip();
         Info.circles[9] = true;
         Info.points -= 2000;
         SaveData.SaveInfo();
@@ -192,13 +239,16 @@ public class UIScripts : MonoBehaviour
         if (Info.circles[10] == true)
         {
             Debug.Log("Already own");
+            PlayCantBuyClip();
             return;
         }
         if (Info.points < 2000)
         {
             Debug.Log("Not enough points");
+            PlayCantBuyClip();
             return;
         }
+        PlayBuyClip();
         Info.circles[10] = true;
         Info.points -= 2000;
         SaveData.SaveInfo();
@@ -210,13 +260,16 @@ public class UIScripts : MonoBehaviour
         if (Info.circles[11] == true)
         {
             Debug.Log("Already own");
+            PlayCantBuyClip();
             return;
         }
         if (Info.points < 15000)
         {
             Debug.Log("Not enough points");
+            PlayCantBuyClip();
             return;
         }
+        PlayBuyClip();
         Info.circles[11] = true;
         Info.points -= 15000;
         SaveData.SaveInfo();
@@ -229,13 +282,16 @@ public class UIScripts : MonoBehaviour
         if (Info.backgrounds[0] == true)
         {
             Debug.Log("Already own");
+            PlayCantBuyClip();
             return;
         }
         if (Info.points < 100)
         {
             Debug.Log("Not enough points");
+            PlayCantBuyClip();
             return;
         }
+        PlayBuyClip();
         Info.backgrounds[0] = true;
         Info.points -= 100;
         SaveData.SaveInfo();
@@ -247,13 +303,16 @@ public class UIScripts : MonoBehaviour
         if (Info.backgrounds[1] == true)
         {
             Debug.Log("Already own");
+            PlayCantBuyClip();
             return;
         }
         if (Info.points < 200)
         {
             Debug.Log("Not enough points");
+            PlayCantBuyClip();
             return;
         }
+        PlayBuyClip();
         Info.backgrounds[1] = true;
         Info.points -= 200;
         SaveData.SaveInfo();
@@ -265,13 +324,16 @@ public class UIScripts : MonoBehaviour
         if (Info.backgrounds[2] == true)
         {
             Debug.Log("Already own");
+            PlayCantBuyClip();
             return;
         }
         if (Info.points < 300)
         {
             Debug.Log("Not enough points");
+            PlayCantBuyClip();
             return;
         }
+        PlayBuyClip();
         Info.backgrounds[2] = true;
         Info.points -= 300;
         SaveData.SaveInfo();
