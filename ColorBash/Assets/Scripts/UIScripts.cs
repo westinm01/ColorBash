@@ -221,4 +221,59 @@ public class UIScripts : MonoBehaviour
         Info.points -= 15000;
         SaveData.SaveInfo();
     }
+
+
+    public void UnlockBackGroundSpace()
+    {
+        SaveData.LoadInfo();
+        if (Info.backgrounds[0] == true)
+        {
+            Debug.Log("Already own");
+            return;
+        }
+        if (Info.points < 100)
+        {
+            Debug.Log("Not enough points");
+            return;
+        }
+        Info.backgrounds[0] = true;
+        Info.points -= 100;
+        SaveData.SaveInfo();
+    }
+
+    public void UnlockBackGroundStars()
+    {
+        SaveData.LoadInfo();
+        if (Info.backgrounds[1] == true)
+        {
+            Debug.Log("Already own");
+            return;
+        }
+        if (Info.points < 200)
+        {
+            Debug.Log("Not enough points");
+            return;
+        }
+        Info.backgrounds[1] = true;
+        Info.points -= 200;
+        SaveData.SaveInfo();
+    }
+
+    public void UnlockBackGroundBoreal()
+    {
+        SaveData.LoadInfo();
+        if (Info.backgrounds[2] == true)
+        {
+            Debug.Log("Already own");
+            return;
+        }
+        if (Info.points < 300)
+        {
+            Debug.Log("Not enough points");
+            return;
+        }
+        Info.backgrounds[2] = true;
+        Info.points -= 300;
+        SaveData.SaveInfo();
+    }
 }
