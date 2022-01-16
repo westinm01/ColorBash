@@ -10,7 +10,7 @@ public class SquareSpawner : MonoBehaviour
 	public float startSpeed;
 	public float speedIncrease;
     public float speedIncreaseFrequency;
-	public float timeBetweenSpawns;
+	public int timeBetweenSpawns;
     private int numIncreases;
 	private float spawnTimer;
     private float speedTimer;
@@ -64,6 +64,8 @@ public class SquareSpawner : MonoBehaviour
         if (!gm.hasStarted){
             return;
         }
+
+        int randNum = Random.Range(0, timeBetweenSpawns);
 		if (spawnTimer > timeBetweenSpawns){
             spawnNewShape();
             spawnTimer = 0;

@@ -12,8 +12,17 @@ public class Triangle : Square
                 takeDamage();
             }
             else{
-                Debug.Log("Game over");
+                isTouching = true;
             }
 		}
 	}
+
+    protected override void Update(){
+        if (isTouching){
+            // Debug.Log("IsTouching");
+            if (square.color != circleSprite.color ){
+                takeDamage();
+            }
+        }
+    }
 }

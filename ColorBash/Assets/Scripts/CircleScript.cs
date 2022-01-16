@@ -6,6 +6,7 @@ public class CircleScript : MonoBehaviour
 {
     public SpriteRenderer sp;
     public float rotationSpeed;
+    public Vector2 knockbackDistance;
 
     void Start()
     {
@@ -33,8 +34,8 @@ public class CircleScript : MonoBehaviour
     }
 
     void Update(){
-        gameObject.transform.RotateAround(gameObject.transform.position + new Vector3(0.25f, 0, 0), new Vector3(0, 0, 1), -rotationSpeed);
-        gameObject.GetComponent<Rigidbody2D>().velocity += new Vector2(0.0001f, 0);
+        gameObject.transform.RotateAround(gameObject.transform.position, new Vector3(0, 0, 1), -rotationSpeed);
+        // gameObject.GetComponent<Rigidbody2D>().velocity += new Vector2(0.0001f, 0);
         // gameObject.transform.position += new Vector3(0.1f, 0);
     }
 
