@@ -2775,10 +2775,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkinSelect
       objectReference: {fileID: 0}
-    - target: {fileID: 7419150938292765517, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7419150938292765521, guid: ff6ca4c240e29354a82dda13f8b96ff1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
