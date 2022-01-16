@@ -15,7 +15,6 @@ public class Square : MonoBehaviour
 		square = gameObject.GetComponent<SpriteRenderer>();
         circleSprite = GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<SpriteRenderer>();
         isTouching = false;
-		explosion = GetComponentInParent<ParticleSystem>();
 	}
     protected virtual void takeDamage(){
 		Destroy(this.gameObject);
@@ -36,8 +35,13 @@ public class Square : MonoBehaviour
                     Info.highScore = ScoreScript.scoreValue;
                 }
                 SaveData.SaveInfo();
+				ParticleSystem temp = Instantiate(explosion, transform.position, Quaternion.identity);
+				ParticleSystem.MainModule tempmain = temp.main;
+				tempmain.startColor = gameObject.GetComponent<SpriteRenderer>().color;
+				temp.Play();
+				Destroy(temp, 1f);
 				takeDamage();
-				explosion.Play();
+				Debug.Log("explosion");
             }
 
 		}
