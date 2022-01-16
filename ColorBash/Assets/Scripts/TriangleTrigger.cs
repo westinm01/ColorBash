@@ -8,7 +8,7 @@ public class TriangleTrigger : SquareTrigger
 		if (collision.gameObject.tag == "Player"){
             Debug.Log("Trigger with Player");
             if (collision.gameObject.GetComponent<SpriteRenderer>().color != square.color){
-                ScoreScript.scoreValue += 1; 
+                ScoreScript.scoreValue += 10; 
                 takeDamage();
             }
             else{
