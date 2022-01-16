@@ -152,13 +152,13 @@ public class SquareSpawner : MonoBehaviour
         // Debug.Log(randShape);
         // switch (randShape){
             // case 0:
-        if (randShape < 12){
+        if (randShape < 13){
             Square newSquare = Instantiate(sq, gameObject.transform.position, Quaternion.identity);
             newSquare.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
             newSquare.GetComponent<SpriteRenderer>().color = getRandomColor();
             newSquare.gameObject.transform.RotateAround(newSquare.gameObject.transform.position, new Vector3(0, 0, 1), rotation);
         }
-        else if (randShape < 25){
+        else if (randShape < 27){
             Triangle newTri = Instantiate(tri, gameObject.transform.position, Quaternion.identity);
             newTri.GetComponent<SquareMover>().squareSpeed = startSpeed + (speedIncrease * numIncreases);
             newTri.GetComponent<SpriteRenderer>().color = getRandomColor();
